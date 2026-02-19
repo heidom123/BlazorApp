@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/Code/">
+    <Project Path="Aids/Aids.csproj" Id="f4249391-7660-44f7-836f-ac01c5e64af5" />
+    <Project Path="Data/Data.csproj" Id="864cdc1a-64be-45ca-a79d-eb1b5214cf15" />
+    <Project Path="Domain/Domain.csproj" Id="05a3f082-5a7e-4acf-bdbc-c461949d6844" />
+  </Folder>
+  <Folder Name="/Soft/" />
+  <Folder Name="/Tests/" />
+</Solution>
