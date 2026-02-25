@@ -1,9 +1,21 @@
 <Solution>
   <Folder Name="/Code/">
-    <Project Path="Aids/Aids.csproj" Id="f4249391-7660-44f7-836f-ac01c5e64af5" />
-    <Project Path="Data/Data.csproj" Id="864cdc1a-64be-45ca-a79d-eb1b5214cf15" />
-    <Project Path="Domain/Domain.csproj" Id="05a3f082-5a7e-4acf-bdbc-c461949d6844" />
+    <File Path=".gitignore" />
+    <Project Path="Code/Aids/Aids.csproj" />
+    <Project Path="Code/Data/Data.csproj" />
+    <Project Path="Code/Domain/Domain.csproj" />
+    <Project Path="Code/Infra/Infra.csproj" />
+    <Project Path="Code/Jobs/Jobs.csproj" />
+    <Project Path="Code/Shared/Shared.csproj" Id="878e82fa-fd50-4ecf-8909-a3bfbecd3c10" />
   </Folder>
   <Folder Name="/Soft/" />
+  <Folder Name="/Soft/Movie/">
+    <Project Path="Soft/Movie/Client/Movie.Client.csproj" />
+    <Project Path="Soft/Movie/Server/Movie.csproj" />
+  </Folder>
+  <Folder Name="/Soft/Todo/">
+    <Project Path="Soft/Todo/Client/Todo.Client.csproj" />
+    <Project Path="Soft/Todo/Server/Todo.csproj" />
+  </Folder>
   <Folder Name="/Tests/" />
 </Solution>
