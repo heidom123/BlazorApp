@@ -8,7 +8,7 @@
 	<WasmEnableExceptionHandling>false</WasmEnableExceptionHandling>
 	<RunAOTCompilation>true</RunAOTCompilation>
   </PropertyGroup>
-
+ 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Components.QuickGrid.EntityFrameworkAdapter" Version="10.0.3" />
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="10.0.3" />
