@@ -1,3 +1,0 @@
-C:\Users\heido\source\repos\heidom123\BlazorApp\Code\Shared\wwwroot\exampleJsInterop.js
-wwwroot\background.png
-wwwroot\exampleJsInterop.js

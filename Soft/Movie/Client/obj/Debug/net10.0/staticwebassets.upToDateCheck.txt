@@ -1,6 +1,0 @@
-wwwroot\appsettings.Development.json
-wwwroot\appsettings.json
-Layout\ReconnectModal.razor.js
-C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\Movie\Client\wwwroot\appsettings.Development.json
-C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\Movie\Client\wwwroot\appsettings.json
-C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\Movie\Client\Layout\ReconnectModal.razor.js
