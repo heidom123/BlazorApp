@@ -10,7 +10,7 @@
   </Folder>
   <Folder Name="/Soft/" />
   <Folder Name="/Soft/Movie/">
-    <Project Path="Soft/BlazorWebAppMovies/BlazorWebAppMovies.csproj" />
+    <Project Path="../heidom123/BlazorApp/Soft/Movie/Movie.csproj" />
   </Folder>
   <Folder Name="/Soft/Todo/">
     <Project Path="Soft/Todo/Client/Todo.Client.csproj" />

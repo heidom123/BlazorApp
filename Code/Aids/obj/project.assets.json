@@ -8,23 +8,23 @@
     "net10.0": []
   },
   "packageFolders": {
-    "C:\\Users\\heido\\.nuget\\packages\\": {},
+    "C:\\Users\\heido.mustkivi\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\heido\\source\\repos\\heidom123\\BlazorApp\\Code\\Aids\\Aids.csproj",
+      "projectUniqueName": "C:\\Users\\heido.mustkivi\\source\\repos\\BlazorApp\\Code\\Aids\\Aids.csproj",
       "projectName": "Abc.Aids",
-      "projectPath": "C:\\Users\\heido\\source\\repos\\heidom123\\BlazorApp\\Code\\Aids\\Aids.csproj",
-      "packagesPath": "C:\\Users\\heido\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\heido\\source\\repos\\heidom123\\BlazorApp\\Code\\Aids\\obj\\",
+      "projectPath": "C:\\Users\\heido.mustkivi\\source\\repos\\BlazorApp\\Code\\Aids\\Aids.csproj",
+      "packagesPath": "C:\\Users\\heido.mustkivi\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\heido.mustkivi\\source\\repos\\BlazorApp\\Code\\Aids\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\heido\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\heido.mustkivi\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
