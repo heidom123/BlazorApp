@@ -1,5 +1,5 @@
 ﻿@page "/todo"
-@rendermode InteractiveServer
+
 
 <PageTitle>Todo</PageTitle>
 
@@ -20,7 +20,7 @@
 
 @code {
     private List<TodoItem> todos = [];
-    private string? newTodo;
+    private string newTodo;
 
     private void AddTodo()
     {

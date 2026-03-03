@@ -1,11 +1,11 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\heido\\source\\repos\\heidom123\\BlazorApp\\Code\\Shared\\wwwroot\\background.png",
+      "Id": "C:\\Users\\heido.mustkivi\\source\\repos\\BlazorApp\\Code\\Shared\\wwwroot\\background.png",
       "PackagePath": "staticwebassets\\background.png"
     },
     {
-      "Id": "C:\\Users\\heido\\source\\repos\\heidom123\\BlazorApp\\Code\\Shared\\wwwroot\\exampleJsInterop.js",
+      "Id": "C:\\Users\\heido.mustkivi\\source\\repos\\BlazorApp\\Code\\Shared\\wwwroot\\exampleJsInterop.js",
       "PackagePath": "staticwebassets\\exampleJsInterop.js"
     },
     {

@@ -1,0 +1,6 @@
+wwwroot\appsettings.Development.json
+wwwroot\appsettings.json
+Layout\ReconnectModal.razor.js
+C:\Users\heido.mustkivi\source\repos\BlazorApp\Soft\Todo\Client\wwwroot\appsettings.Development.json
+C:\Users\heido.mustkivi\source\repos\BlazorApp\Soft\Todo\Client\wwwroot\appsettings.json
+C:\Users\heido.mustkivi\source\repos\BlazorApp\Soft\Todo\Client\Layout\ReconnectModal.razor.js
