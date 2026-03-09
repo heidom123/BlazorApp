@@ -74,8 +74,6 @@ C:\Users\heido.mustkivi\source\repos\BlazorApp\Code\Shared\obj\Debug\net10.0\sco
 C:\Users\heido.mustkivi\source\repos\BlazorApp\Code\Shared\obj\Debug\net10.0\scopedcss\bundle\Abc.Shared.styles.css
 C:\Users\heido.mustkivi\source\repos\BlazorApp\Code\Shared\obj\Debug\net10.0\scopedcss\projectbundle\Abc.Shared.bundle.scp.css
 C:\Users\heido.mustkivi\source\repos\BlazorApp\Code\Shared\obj\Debug\net10.0\compressed\j4rr02ik7x-{0}-6pqz8bsss0-6pqz8bsss0.gz
-C:\Users\heido.mustkivi\source\repos\BlazorApp\Code\Shared\obj\Debug\net10.0\compressed\kmdzzlrzqm-{0}-dq7599wsad-dq7599wsad.gz
-C:\Users\heido.mustkivi\source\repos\BlazorApp\Code\Shared\obj\Debug\net10.0\compressed\kk8z6b8yqy-{0}-dq7599wsad-dq7599wsad.gz
 C:\Users\heido.mustkivi\source\repos\BlazorApp\Code\Shared\obj\Debug\net10.0\staticwebassets.build.json
 C:\Users\heido.mustkivi\source\repos\BlazorApp\Code\Shared\obj\Debug\net10.0\staticwebassets.build.json.cache
 C:\Users\heido.mustkivi\source\repos\BlazorApp\Code\Shared\obj\Debug\net10.0\staticwebassets.development.json
@@ -93,3 +91,5 @@ C:\Users\heido.mustkivi\source\repos\BlazorApp\Code\Shared\obj\Debug\net10.0\Abc
 C:\Users\heido.mustkivi\source\repos\BlazorApp\Code\Shared\obj\Debug\net10.0\refint\Abc.Shared.dll
 C:\Users\heido.mustkivi\source\repos\BlazorApp\Code\Shared\obj\Debug\net10.0\Abc.Shared.pdb
 C:\Users\heido.mustkivi\source\repos\BlazorApp\Code\Shared\obj\Debug\net10.0\ref\Abc.Shared.dll
+C:\Users\heido.mustkivi\source\repos\BlazorApp\Code\Shared\obj\Debug\net10.0\compressed\kmdzzlrzqm-{0}-apub4kuj52-apub4kuj52.gz
+C:\Users\heido.mustkivi\source\repos\BlazorApp\Code\Shared\obj\Debug\net10.0\compressed\kk8z6b8yqy-{0}-apub4kuj52-apub4kuj52.gz
