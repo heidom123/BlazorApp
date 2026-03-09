@@ -25,3 +25,7 @@ build_property.EnableCodeStyleSeverity =
 [C:/Users/heido.mustkivi/source/repos/BlazorApp/Code/Shared/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/heido.mustkivi/source/repos/BlazorApp/Code/Shared/Components/MyNavLink.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xNeU5hdkxpbmsucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-8otnl29m1r
