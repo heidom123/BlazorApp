@@ -18,5 +18,6 @@
   </Folder>
   <Folder Name="/Tests/">
     <Project Path="Tests/Aids/Aids.csproj" Id="738b5b4b-a1e1-49bb-887a-c0675479a7c5" />
+    <Project Path="Tests/Tests.Data/Data.csproj" Id="339e90e2-afc1-42df-a152-59f87322a4dd" />
   </Folder>
 </Solution>

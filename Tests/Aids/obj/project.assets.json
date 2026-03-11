@@ -1074,6 +1074,16 @@
             "related": ".xml"
           }
         }
+      },
+      "Abc.Aids/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/Abc.Aids.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Abc.Aids.dll": {}
+        }
       }
     }
   },
@@ -2267,10 +2277,16 @@
         "newtonsoft.json.nuspec",
         "packageIcon.png"
       ]
+    },
+    "Abc.Aids/1.0.0": {
+      "type": "project",
+      "path": "../../Code/Aids/Aids.csproj",
+      "msbuildProject": "../../Code/Aids/Aids.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net10.0": [
+      "Abc.Aids >= 1.0.0",
       "MSTest >= 4.0.1"
     ]
   },
@@ -2282,7 +2298,7 @@
     "version": "1.0.0",
     "restore": {
       "projectUniqueName": "C:\\Users\\heido.mustkivi\\source\\repos\\BlazorApp\\Tests\\Aids\\Aids.csproj",
-      "projectName": "Aids",
+      "projectName": "Abc.Tests.Aids",
       "projectPath": "C:\\Users\\heido.mustkivi\\source\\repos\\BlazorApp\\Tests\\Aids\\Aids.csproj",
       "packagesPath": "C:\\Users\\heido.mustkivi\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\heido.mustkivi\\source\\repos\\BlazorApp\\Tests\\Aids\\obj\\",
@@ -2306,7 +2322,11 @@
       "frameworks": {
         "net10.0": {
           "targetAlias": "net10.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\heido.mustkivi\\source\\repos\\BlazorApp\\Code\\Aids\\Aids.csproj": {
+              "projectPath": "C:\\Users\\heido.mustkivi\\source\\repos\\BlazorApp\\Code\\Aids\\Aids.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
