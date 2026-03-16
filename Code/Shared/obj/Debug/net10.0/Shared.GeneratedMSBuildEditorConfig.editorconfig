@@ -22,12 +22,20 @@ build_property._RazorSourceGeneratorDebug =
 build_property.EffectiveAnalysisLevelStyle = 10.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/heido.mustkivi/source/repos/BlazorApp/Code/Shared/Components/MyEditItem.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xNeUVkaXRJdGVtLnJhem9y
+[C:/Users/heido.mustkivi/source/repos/BlazorApp/Code/Shared/Components/MyEntityEditor.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xNeUVudGl0eUVkaXRvci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/heido.mustkivi/source/repos/BlazorApp/Code/Shared/Components/MyViewItem.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xNeVZpZXdJdGVtLnJhem9y
+[C:/Users/heido.mustkivi/source/repos/BlazorApp/Code/Shared/Components/MyEntityViewer.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xNeUVudGl0eVZpZXdlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/heido.mustkivi/source/repos/BlazorApp/Code/Shared/Components/MyPropertyEditor.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xNeVByb3BlcnR5RWRpdG9yLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/heido.mustkivi/source/repos/BlazorApp/Code/Shared/Components/MyPropertyViewer.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xNeVByb3BlcnR5Vmlld2VyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/heido.mustkivi/source/repos/BlazorApp/Code/Shared/_Imports.razor]
