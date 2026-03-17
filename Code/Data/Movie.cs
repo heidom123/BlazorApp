@@ -9,7 +9,10 @@ namespace Abc.Data;
     [DisplayName("Title")] public override string Name { get; set; }
     [DisplayName("ReleaseDate")] public override DateTime ValidFrom { get; set; }
     public string Genre { get; set; }
-    [DataType(DataType.Currency), Column(TypeName = "decimal(18, 2)")]
+
+    [Range(0, 100)]
+    [DataType(DataType.Currency)]
+    [Column(TypeName = "decimal(18, 2)")]
     public decimal Price { get; set; }
     public string Rating { get; set; }
 }
