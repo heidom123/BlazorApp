@@ -4,7 +4,7 @@ namespace Abc.Data.Common;
 
 public abstract class  BaseEntity
 {
-    public Guid Id { get; set; } = Guid.NewGuid();
+    public virtual Guid Id { get; set; } = Guid.NewGuid();
     [Timestamp] public virtual byte[] Timestamp { get; set; } = [];
     public virtual DateTime ValidFrom { get; set; }
     public virtual DateTime ValidTo { get; set; }
