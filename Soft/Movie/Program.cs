@@ -1,11 +1,13 @@
 ﻿using Abc.Soft.Web.Components;
+using Abc.Infra;
+using System.IO;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
-using Abc.Soft.Web.Data;
 
 var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddDbContextFactory<AbcSoftWebContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("AbcSoftWebContext") ?? throw new InvalidOperationException("Connection string 'AbcSoftWebContext' not found.")));
+var dbFile = Path.Combine(builder.Environment.ContentRootPath, "Data", "app.db");
+builder.Services.AddDbContextFactory<ApplicationDbContext>(options =>
+    options.UseSqlite($"Data Source={dbFile}"));
 
 builder.Services.AddQuickGridEntityFrameworkAdapter();
 
@@ -15,13 +17,14 @@ builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
 
+builder.Services.AddScoped<IMoviesRepo, MoviesRepo>();
+builder.Services.AddScoped<ICountriesRepo, CountriesRepo>();
+builder.Services.AddScoped<ICurrenciesRepo, CurrenciesRepo>();
 var app = builder.Build();
 
 using (var scope = app.Services.CreateScope())
 {
     var services = scope.ServiceProvider;
-
-    SeedData.Initialize(services);
 }
 
 // Configure the HTTP request pipeline.

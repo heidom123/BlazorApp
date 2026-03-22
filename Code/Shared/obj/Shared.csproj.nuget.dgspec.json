@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\heido.mustkivi\\source\\repos\\BlazorApp\\Code\\Shared\\Shared.csproj": {}
+    "C:\\Users\\heido\\source\\repos\\heidom123\\BlazorApp\\Code\\Shared\\Shared.csproj": {}
   },
   "projects": {
-    "C:\\Users\\heido.mustkivi\\source\\repos\\BlazorApp\\Code\\Aids\\Aids.csproj": {
+    "C:\\Users\\heido\\source\\repos\\heidom123\\BlazorApp\\Code\\Aids\\Aids.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\heido.mustkivi\\source\\repos\\BlazorApp\\Code\\Aids\\Aids.csproj",
+        "projectUniqueName": "C:\\Users\\heido\\source\\repos\\heidom123\\BlazorApp\\Code\\Aids\\Aids.csproj",
         "projectName": "Abc.Aids",
-        "projectPath": "C:\\Users\\heido.mustkivi\\source\\repos\\BlazorApp\\Code\\Aids\\Aids.csproj",
-        "packagesPath": "C:\\Users\\heido.mustkivi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\heido.mustkivi\\source\\repos\\BlazorApp\\Code\\Aids\\obj\\",
+        "projectPath": "C:\\Users\\heido\\source\\repos\\heidom123\\BlazorApp\\Code\\Aids\\Aids.csproj",
+        "packagesPath": "C:\\Users\\heido\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\heido\\source\\repos\\heidom123\\BlazorApp\\Code\\Aids\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\heido.mustkivi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\heido\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -344,20 +344,20 @@
         }
       }
     },
-    "C:\\Users\\heido.mustkivi\\source\\repos\\BlazorApp\\Code\\Data\\Data.csproj": {
+    "C:\\Users\\heido\\source\\repos\\heidom123\\BlazorApp\\Code\\Data\\Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\heido.mustkivi\\source\\repos\\BlazorApp\\Code\\Data\\Data.csproj",
+        "projectUniqueName": "C:\\Users\\heido\\source\\repos\\heidom123\\BlazorApp\\Code\\Data\\Data.csproj",
         "projectName": "Abc.Data",
-        "projectPath": "C:\\Users\\heido.mustkivi\\source\\repos\\BlazorApp\\Code\\Data\\Data.csproj",
-        "packagesPath": "C:\\Users\\heido.mustkivi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\heido.mustkivi\\source\\repos\\BlazorApp\\Code\\Data\\obj\\",
+        "projectPath": "C:\\Users\\heido\\source\\repos\\heidom123\\BlazorApp\\Code\\Data\\Data.csproj",
+        "packagesPath": "C:\\Users\\heido\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\heido\\source\\repos\\heidom123\\BlazorApp\\Code\\Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\heido.mustkivi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\heido\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -373,8 +373,8 @@
           "net10.0": {
             "targetAlias": "net10.0",
             "projectReferences": {
-              "C:\\Users\\heido.mustkivi\\source\\repos\\BlazorApp\\Code\\Aids\\Aids.csproj": {
-                "projectPath": "C:\\Users\\heido.mustkivi\\source\\repos\\BlazorApp\\Code\\Aids\\Aids.csproj"
+              "C:\\Users\\heido\\source\\repos\\heidom123\\BlazorApp\\Code\\Aids\\Aids.csproj": {
+                "projectPath": "C:\\Users\\heido\\source\\repos\\heidom123\\BlazorApp\\Code\\Aids\\Aids.csproj"
               }
             }
           }
@@ -688,20 +688,20 @@
         }
       }
     },
-    "C:\\Users\\heido.mustkivi\\source\\repos\\BlazorApp\\Code\\Domain\\Domain.csproj": {
+    "C:\\Users\\heido\\source\\repos\\heidom123\\BlazorApp\\Code\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\heido.mustkivi\\source\\repos\\BlazorApp\\Code\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\heido\\source\\repos\\heidom123\\BlazorApp\\Code\\Domain\\Domain.csproj",
         "projectName": "Abc.Domain",
-        "projectPath": "C:\\Users\\heido.mustkivi\\source\\repos\\BlazorApp\\Code\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\heido.mustkivi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\heido.mustkivi\\source\\repos\\BlazorApp\\Code\\Domain\\obj\\",
+        "projectPath": "C:\\Users\\heido\\source\\repos\\heidom123\\BlazorApp\\Code\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\heido\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\heido\\source\\repos\\heidom123\\BlazorApp\\Code\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\heido.mustkivi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\heido\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -717,8 +717,8 @@
           "net10.0": {
             "targetAlias": "net10.0",
             "projectReferences": {
-              "C:\\Users\\heido.mustkivi\\source\\repos\\BlazorApp\\Code\\Data\\Data.csproj": {
-                "projectPath": "C:\\Users\\heido.mustkivi\\source\\repos\\BlazorApp\\Code\\Data\\Data.csproj"
+              "C:\\Users\\heido\\source\\repos\\heidom123\\BlazorApp\\Code\\Data\\Data.csproj": {
+                "projectPath": "C:\\Users\\heido\\source\\repos\\heidom123\\BlazorApp\\Code\\Data\\Data.csproj"
               }
             }
           }
@@ -1032,20 +1032,20 @@
         }
       }
     },
-    "C:\\Users\\heido.mustkivi\\source\\repos\\BlazorApp\\Code\\Infra\\Infra.csproj": {
+    "C:\\Users\\heido\\source\\repos\\heidom123\\BlazorApp\\Code\\Infra\\Infra.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\heido.mustkivi\\source\\repos\\BlazorApp\\Code\\Infra\\Infra.csproj",
+        "projectUniqueName": "C:\\Users\\heido\\source\\repos\\heidom123\\BlazorApp\\Code\\Infra\\Infra.csproj",
         "projectName": "Abc.Infra",
-        "projectPath": "C:\\Users\\heido.mustkivi\\source\\repos\\BlazorApp\\Code\\Infra\\Infra.csproj",
-        "packagesPath": "C:\\Users\\heido.mustkivi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\heido.mustkivi\\source\\repos\\BlazorApp\\Code\\Infra\\obj\\",
+        "projectPath": "C:\\Users\\heido\\source\\repos\\heidom123\\BlazorApp\\Code\\Infra\\Infra.csproj",
+        "packagesPath": "C:\\Users\\heido\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\heido\\source\\repos\\heidom123\\BlazorApp\\Code\\Infra\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\heido.mustkivi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\heido\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -1061,8 +1061,8 @@
           "net10.0": {
             "targetAlias": "net10.0",
             "projectReferences": {
-              "C:\\Users\\heido.mustkivi\\source\\repos\\BlazorApp\\Code\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\heido.mustkivi\\source\\repos\\BlazorApp\\Code\\Domain\\Domain.csproj"
+              "C:\\Users\\heido\\source\\repos\\heidom123\\BlazorApp\\Code\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\heido\\source\\repos\\heidom123\\BlazorApp\\Code\\Domain\\Domain.csproj"
               }
             }
           }
@@ -1091,7 +1091,16 @@
               "target": "Package",
               "version": "[10.0.5, )"
             },
-            "Microsoft.EntityFrameWorkCore": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "target": "Package",
+              "version": "[10.*, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[10.*, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "suppressParent": "All",
               "target": "Package",
               "version": "[10.*, )"
             }
@@ -1390,20 +1399,20 @@
         }
       }
     },
-    "C:\\Users\\heido.mustkivi\\source\\repos\\BlazorApp\\Code\\Jobs\\Jobs.csproj": {
+    "C:\\Users\\heido\\source\\repos\\heidom123\\BlazorApp\\Code\\Jobs\\Jobs.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\heido.mustkivi\\source\\repos\\BlazorApp\\Code\\Jobs\\Jobs.csproj",
+        "projectUniqueName": "C:\\Users\\heido\\source\\repos\\heidom123\\BlazorApp\\Code\\Jobs\\Jobs.csproj",
         "projectName": "Abc.Jobs",
-        "projectPath": "C:\\Users\\heido.mustkivi\\source\\repos\\BlazorApp\\Code\\Jobs\\Jobs.csproj",
-        "packagesPath": "C:\\Users\\heido.mustkivi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\heido.mustkivi\\source\\repos\\BlazorApp\\Code\\Jobs\\obj\\",
+        "projectPath": "C:\\Users\\heido\\source\\repos\\heidom123\\BlazorApp\\Code\\Jobs\\Jobs.csproj",
+        "packagesPath": "C:\\Users\\heido\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\heido\\source\\repos\\heidom123\\BlazorApp\\Code\\Jobs\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\heido.mustkivi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\heido\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -1419,8 +1428,8 @@
           "net10.0": {
             "targetAlias": "net10.0",
             "projectReferences": {
-              "C:\\Users\\heido.mustkivi\\source\\repos\\BlazorApp\\Code\\Infra\\Infra.csproj": {
-                "projectPath": "C:\\Users\\heido.mustkivi\\source\\repos\\BlazorApp\\Code\\Infra\\Infra.csproj"
+              "C:\\Users\\heido\\source\\repos\\heidom123\\BlazorApp\\Code\\Infra\\Infra.csproj": {
+                "projectPath": "C:\\Users\\heido\\source\\repos\\heidom123\\BlazorApp\\Code\\Infra\\Infra.csproj"
               }
             }
           }
@@ -1734,20 +1743,20 @@
         }
       }
     },
-    "C:\\Users\\heido.mustkivi\\source\\repos\\BlazorApp\\Code\\Shared\\Shared.csproj": {
+    "C:\\Users\\heido\\source\\repos\\heidom123\\BlazorApp\\Code\\Shared\\Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\heido.mustkivi\\source\\repos\\BlazorApp\\Code\\Shared\\Shared.csproj",
+        "projectUniqueName": "C:\\Users\\heido\\source\\repos\\heidom123\\BlazorApp\\Code\\Shared\\Shared.csproj",
         "projectName": "Abc.Shared",
-        "projectPath": "C:\\Users\\heido.mustkivi\\source\\repos\\BlazorApp\\Code\\Shared\\Shared.csproj",
-        "packagesPath": "C:\\Users\\heido.mustkivi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\heido.mustkivi\\source\\repos\\BlazorApp\\Code\\Shared\\obj\\",
+        "projectPath": "C:\\Users\\heido\\source\\repos\\heidom123\\BlazorApp\\Code\\Shared\\Shared.csproj",
+        "packagesPath": "C:\\Users\\heido\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\heido\\source\\repos\\heidom123\\BlazorApp\\Code\\Shared\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\heido.mustkivi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\heido\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -1763,8 +1772,8 @@
           "net10.0": {
             "targetAlias": "net10.0",
             "projectReferences": {
-              "C:\\Users\\heido.mustkivi\\source\\repos\\BlazorApp\\Code\\Jobs\\Jobs.csproj": {
-                "projectPath": "C:\\Users\\heido.mustkivi\\source\\repos\\BlazorApp\\Code\\Jobs\\Jobs.csproj"
+              "C:\\Users\\heido\\source\\repos\\heidom123\\BlazorApp\\Code\\Jobs\\Jobs.csproj": {
+                "projectPath": "C:\\Users\\heido\\source\\repos\\heidom123\\BlazorApp\\Code\\Jobs\\Jobs.csproj"
               }
             }
           }

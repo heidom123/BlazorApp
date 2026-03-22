@@ -2,10 +2,10 @@
 @rendermode InteractiveServer
 @using Microsoft.EntityFrameworkCore
 @using Microsoft.AspNetCore.Components.QuickGrid
-@using BlazorWebAppMovies.Models
-@using Abc.Soft.Web.Data
+@using Abc.Data
+@using Abc.Infra
 @implements IAsyncDisposable
-@inject IDbContextFactory<Abc.Soft.Web.Data.AbcSoftWebContext> DbFactory
+@inject IDbContextFactory<ApplicationDbContext> DbFactory
 
 <PageTitle>Index</PageTitle>
 
@@ -20,8 +20,8 @@
 </p>
 <div>
 <QuickGrid Class="table" Items="FilteredMovies" Pagination="pagination">
-    <PropertyColumn Property="movie => movie.Title" Sortable="true" />
-    <PropertyColumn Property="movie => movie.ReleaseDate" Title="Release Date" />
+    <PropertyColumn Property="movie => movie.Name" Sortable="true" />
+    <PropertyColumn Property="movie => movie.ValidFrom" Title="Release Date" />
     <PropertyColumn Property="movie => movie.Genre" />
     <PropertyColumn Property="movie => movie.Price" />
     <PropertyColumn Property="movie => movie.Rating" />
@@ -36,7 +36,7 @@
 <Paginator State="pagination" />
 
 @code {
-    private AbcSoftWebContext context = default!;
+    private ApplicationDbContext context = default!;
     private PaginationState pagination = new PaginationState { ItemsPerPage = 5 };
 
     protected override void OnInitialized()
@@ -49,5 +49,5 @@
     private string titleFilter = string.Empty;
 
     private IQueryable<Movie> FilteredMovies =>
-        context.Movie.Where(m => m.Title!.Contains(titleFilter));
+        context.Movies.Where(m => m.Name!.Contains(titleFilter));
 }

@@ -1,7 +1,8 @@
 ﻿@page "/movies/edit"
 @using Microsoft.EntityFrameworkCore
-@using BlazorWebAppMovies.Models
-@inject IDbContextFactory<Abc.Soft.Web.Data.AbcSoftWebContext> DbFactory
+@using Abc.Data
+@using Abc.Infra
+@inject IDbContextFactory<ApplicationDbContext> DbFactory
 @inject NavigationManager NavigationManager
 
 <PageTitle>Edit</PageTitle>
@@ -24,13 +25,13 @@ else
                 <input type="hidden" name="Movie.Id" value="@Movie.Id" />
                 <div class="mb-3">
                     <label for="title" class="form-label">Title:</label>
-                    <InputText id="title" @bind-Value="Movie.Title" class="form-control" />
-                    <ValidationMessage For="() => Movie.Title" class="text-danger" />
+                    <InputText id="title" @bind-Value="Movie.Name" class="form-control" />
+                    <ValidationMessage For="() => Movie.Name" class="text-danger" />
                 </div>
                 <div class="mb-3">
                     <label for="releasedate" class="form-label">Release Date:</label>
-                    <InputDate id="releasedate" @bind-Value="Movie.ReleaseDate" class="form-control" />
-                    <ValidationMessage For="() => Movie.ReleaseDate" class="text-danger" />
+                    <InputDate id="releasedate" @bind-Value="Movie.ValidFrom" class="form-control" />
+                    <ValidationMessage For="() => Movie.ValidFrom" class="text-danger" />
                 </div>
                 <div class="mb-3">
                     <label for="genre" class="form-label">Genre:</label>
@@ -59,7 +60,7 @@ else
 
 @code {
     [SupplyParameterFromQuery]
-    private int Id { get; set; }
+    private Guid Id { get; set; }
 
     [SupplyParameterFromForm]
     private Movie? Movie { get; set; }
@@ -67,7 +68,7 @@ else
     protected override async Task OnInitializedAsync()
     {
         using var context = DbFactory.CreateDbContext();
-        Movie ??= await context.Movie.FirstOrDefaultAsync(m => m.Id == Id);
+        Movie ??= await context.Movies.FirstOrDefaultAsync(m => m.Id == Id);
 
         if (Movie is null)
         {
@@ -101,9 +102,9 @@ else
         NavigationManager.NavigateTo("/movies");
     }
 
-    private bool MovieExists(int id)
+    private bool MovieExists(Guid id)
     {
         using var context = DbFactory.CreateDbContext();
-        return context.Movie.Any(e => e.Id == id);
+        return context.Movies.Any(e => e.Id == id);
     }
 }

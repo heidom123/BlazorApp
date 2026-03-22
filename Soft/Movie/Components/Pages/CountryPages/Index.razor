@@ -2,12 +2,11 @@
 @rendermode InteractiveServer
 @using Abc.Data
 @using Abc.Infra
-@using Abc.Soft.Web.Data
 @using Abc.Shared.Components
 @using Microsoft.AspNetCore.Components.QuickGrid
 @using Microsoft.EntityFrameworkCore
+@using System.Linq
 
-@inject IDbContextFactory<ApplicationDbContext> DbFactory
 @inject ICountriesRepo repo
 
 <PageTitle>Countries</PageTitle>
