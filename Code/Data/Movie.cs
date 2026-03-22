@@ -10,9 +10,7 @@ namespace Abc.Data;
     [DisplayName("ReleaseDate")] public override DateTime ValidFrom { get; set; }
     public string Genre { get; set; }
 
-    [Range(0, 100)]
-    [DataType(DataType.Currency)]
-    [Column(TypeName = "decimal(18, 2)")]
+    [DataType(DataType.Currency), Column(TypeName = "decimal(18, 2)")]
     public decimal Price { get; set; }
     public string Rating { get; set; }
 }
