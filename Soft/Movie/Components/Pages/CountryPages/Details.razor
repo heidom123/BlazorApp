@@ -1,0 +1,38 @@
+﻿@page "/countries/details"
+@using Abc.Data
+@using Abc.Infra
+@using Abc.Shared.Components
+@using Microsoft.EntityFrameworkCore
+@inject NavigationManager NavigationManager
+@inject ICountriesRepo repo
+
+<PageTitle>CountryDetails</PageTitle>
+
+<h1>CountryDetails</h1>
+
+<div>
+    <h2>CountryDetails</h2>
+    <hr />
+    @if (country is null)
+    {
+        <p><em>Loading...</em></p>
+    }
+    else {
+        <MyEntityViewer Entity="country" />
+        <div>
+            <a href="@($"/countries/edit?id={country.Id}")">Edit</a> |
+            <a href="@($"/countries")">Back to List</a>
+        </div>
+    }
+</div>
+
+@code {
+    private Country country;
+
+    [SupplyParameterFromQuery] private Guid Id { get; set; }
+
+    protected override async Task OnInitializedAsync() {
+		country = await repo.GetAsync(Id);
+        if (country is null) NavigationManager.NotFound();
+    }
+}

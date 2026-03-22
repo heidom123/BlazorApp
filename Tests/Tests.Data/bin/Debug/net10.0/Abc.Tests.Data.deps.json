@@ -1024,6 +1024,7 @@
       "Abc.Tests.Aids/1.0.0": {
         "dependencies": {
           "Abc.Aids": "1.0.0",
+          "Abc.Data": "1.0.0",
           "MSTest": "4.0.1"
         },
         "runtime": {

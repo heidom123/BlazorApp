@@ -9,8 +9,10 @@
       "Abc.Tests.Aids/1.0.0": {
         "dependencies": {
           "Abc.Aids": "1.0.0",
+          "Abc.Data": "1.0.0",
           "MSTest": "4.0.1",
           "Abc.Aids.Reference": "1.0.0.0",
+          "Abc.Data.Reference": "1.0.0.0",
           "MSTest.TestFramework.Extensions": "4.0.1.0"
         },
         "runtime": {
@@ -1006,9 +1008,27 @@
           }
         }
       },
+      "Abc.Data/1.0.0": {
+        "dependencies": {
+          "Abc.Aids": "1.0.0"
+        },
+        "runtime": {
+          "Abc.Data.dll": {
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
       "Abc.Aids.Reference/1.0.0.0": {
         "runtime": {
           "Abc.Aids.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Abc.Data.Reference/1.0.0.0": {
+        "runtime": {
+          "Abc.Data.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -1161,7 +1181,17 @@
       "serviceable": false,
       "sha512": ""
     },
+    "Abc.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "Abc.Aids.Reference/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Abc.Data.Reference/1.0.0.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""

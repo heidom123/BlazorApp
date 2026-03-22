@@ -719,6 +719,9 @@
             "projectReferences": {
               "C:\\Users\\heido.mustkivi\\source\\repos\\BlazorApp\\Code\\Aids\\Aids.csproj": {
                 "projectPath": "C:\\Users\\heido.mustkivi\\source\\repos\\BlazorApp\\Code\\Aids\\Aids.csproj"
+              },
+              "C:\\Users\\heido.mustkivi\\source\\repos\\BlazorApp\\Code\\Data\\Data.csproj": {
+                "projectPath": "C:\\Users\\heido.mustkivi\\source\\repos\\BlazorApp\\Code\\Data\\Data.csproj"
               }
             }
           }

@@ -1,3 +1,4 @@
+@import '_content/Abc.Shared/Abc.Shared.apub4kuj52.bundle.scp.css';
 @import '_content/Microsoft.AspNetCore.Components.QuickGrid/Microsoft.AspNetCore.Components.QuickGrid.boiwgh0w5b.bundle.scp.css';
 
 /* /Components/Layout/MainLayout.razor.rz.scp.css */
@@ -363,6 +364,16 @@ main[b-sqlpkvzydt] {
         opacity: 0;
     }
 }
+/* /Components/Pages/CountryPages/Index.razor.rz.scp.css */
+body[b-7kn5srskfb] {
+}
+[b-7kn5srskfb] tr {
+    height: 3em;
+}
+
+    [b-7kn5srskfb] tr > td {
+        vertical-align: middle;
+    }
 /* /Components/Pages/MoviePages/Index.razor.rz.scp.css */
 body[b-ej2qsn0ts7] {
 }

@@ -8,10 +8,18 @@
     ".NETCoreApp,Version=v10.0": {
       "Abc.Soft.Web/1.0.0": {
         "dependencies": {
+          "Abc.Data": "1.0.0",
+          "Abc.Shared": "1.0.0",
           "Microsoft.AspNetCore.Components.QuickGrid.EntityFrameworkAdapter": "10.0.2",
           "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "10.0.2",
           "Microsoft.EntityFrameworkCore.SqlServer": "10.0.2",
-          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "10.0.2"
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "10.0.2",
+          "Abc.Aids.Reference": "1.0.0.0",
+          "Abc.Data.Reference": "1.0.0.0",
+          "Abc.Domain.Reference": "1.0.0.0",
+          "Abc.Infra.Reference": "1.0.0.0",
+          "Abc.Jobs.Reference": "1.0.0.0",
+          "Abc.Shared.Reference": "1.0.0.0"
         },
         "runtime": {
           "Abc.Soft.Web.dll": {}
@@ -594,7 +602,7 @@
       "Microsoft.AspNetCore.Components.QuickGrid.EntityFrameworkAdapter/10.0.2": {
         "dependencies": {
           "Microsoft.AspNetCore.Components.QuickGrid": "10.0.2",
-          "Microsoft.EntityFrameworkCore": "10.0.2"
+          "Microsoft.EntityFrameworkCore": "10.0.5"
         },
         "runtime": {
           "lib/net10.0/Microsoft.AspNetCore.Components.QuickGrid.EntityFrameworkAdapter.dll": {
@@ -605,12 +613,23 @@
       },
       "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore/10.0.2": {
         "dependencies": {
-          "Microsoft.EntityFrameworkCore.Relational": "10.0.2"
+          "Microsoft.EntityFrameworkCore.Relational": "10.0.5"
         },
         "runtime": {
           "lib/net10.0/Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll": {
             "assemblyVersion": "10.0.2.0",
             "fileVersion": "10.0.225.61305"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.Identity.EntityFrameworkCore/10.0.5": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Relational": "10.0.5"
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll": {
+            "assemblyVersion": "10.0.5.0",
+            "fileVersion": "10.0.526.15411"
           }
         }
       },
@@ -1253,22 +1272,22 @@
           }
         }
       },
-      "Microsoft.EntityFrameworkCore/10.0.2": {
+      "Microsoft.EntityFrameworkCore/10.0.5": {
         "dependencies": {
-          "Microsoft.EntityFrameworkCore.Abstractions": "10.0.2"
+          "Microsoft.EntityFrameworkCore.Abstractions": "10.0.5"
         },
         "runtime": {
           "lib/net10.0/Microsoft.EntityFrameworkCore.dll": {
-            "assemblyVersion": "10.0.2.0",
-            "fileVersion": "10.0.225.61305"
+            "assemblyVersion": "10.0.5.0",
+            "fileVersion": "10.0.526.15411"
           }
         }
       },
-      "Microsoft.EntityFrameworkCore.Abstractions/10.0.2": {
+      "Microsoft.EntityFrameworkCore.Abstractions/10.0.5": {
         "runtime": {
           "lib/net10.0/Microsoft.EntityFrameworkCore.Abstractions.dll": {
-            "assemblyVersion": "10.0.2.0",
-            "fileVersion": "10.0.225.61305"
+            "assemblyVersion": "10.0.5.0",
+            "fileVersion": "10.0.526.15411"
           }
         }
       },
@@ -1279,7 +1298,7 @@
           "Microsoft.CodeAnalysis.CSharp": "5.0.0",
           "Microsoft.CodeAnalysis.CSharp.Workspaces": "5.0.0",
           "Microsoft.CodeAnalysis.Workspaces.MSBuild": "5.0.0",
-          "Microsoft.EntityFrameworkCore.Relational": "10.0.2",
+          "Microsoft.EntityFrameworkCore.Relational": "10.0.5",
           "Microsoft.Extensions.DependencyModel": "10.0.2",
           "Mono.TextTemplating": "3.0.0",
           "Newtonsoft.Json": "13.0.3"
@@ -1291,21 +1310,21 @@
           }
         }
       },
-      "Microsoft.EntityFrameworkCore.Relational/10.0.2": {
+      "Microsoft.EntityFrameworkCore.Relational/10.0.5": {
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": "10.0.2"
+          "Microsoft.EntityFrameworkCore": "10.0.5"
         },
         "runtime": {
           "lib/net10.0/Microsoft.EntityFrameworkCore.Relational.dll": {
-            "assemblyVersion": "10.0.2.0",
-            "fileVersion": "10.0.225.61305"
+            "assemblyVersion": "10.0.5.0",
+            "fileVersion": "10.0.526.15411"
           }
         }
       },
       "Microsoft.EntityFrameworkCore.SqlServer/10.0.2": {
         "dependencies": {
           "Microsoft.Data.SqlClient": "6.1.1",
-          "Microsoft.EntityFrameworkCore.Relational": "10.0.2"
+          "Microsoft.EntityFrameworkCore.Relational": "10.0.5"
         },
         "runtime": {
           "lib/net10.0/Microsoft.EntityFrameworkCore.SqlServer.dll": {
@@ -1446,7 +1465,7 @@
           "Microsoft.CodeAnalysis.Razor": "6.0.24",
           "Microsoft.CodeAnalysis.Workspaces.Common": "5.0.0",
           "Microsoft.CodeAnalysis.Workspaces.MSBuild": "5.0.0",
-          "Microsoft.EntityFrameworkCore": "10.0.2",
+          "Microsoft.EntityFrameworkCore": "10.0.5",
           "Microsoft.EntityFrameworkCore.Design": "10.0.2",
           "Microsoft.Extensions.DependencyModel": "10.0.2",
           "Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore": "10.0.2",
@@ -1504,7 +1523,7 @@
           "Microsoft.CodeAnalysis.Workspaces.Common": "5.0.0",
           "Microsoft.CodeAnalysis.Workspaces.MSBuild": "5.0.0",
           "Microsoft.DotNet.Scaffolding.Shared": "10.0.2",
-          "Microsoft.EntityFrameworkCore": "10.0.2",
+          "Microsoft.EntityFrameworkCore": "10.0.5",
           "Microsoft.EntityFrameworkCore.Design": "10.0.2",
           "Microsoft.Extensions.DependencyModel": "10.0.2",
           "Microsoft.VisualStudio.Web.CodeGenerators.Mvc": "10.0.2",
@@ -1535,7 +1554,7 @@
           "Microsoft.CodeAnalysis.Workspaces.Common": "5.0.0",
           "Microsoft.CodeAnalysis.Workspaces.MSBuild": "5.0.0",
           "Microsoft.DotNet.Scaffolding.Shared": "10.0.2",
-          "Microsoft.EntityFrameworkCore": "10.0.2",
+          "Microsoft.EntityFrameworkCore": "10.0.5",
           "Microsoft.EntityFrameworkCore.Design": "10.0.2",
           "Microsoft.Extensions.DependencyModel": "10.0.2",
           "Microsoft.VisualStudio.Web.CodeGeneration.Core": "10.0.2",
@@ -1618,7 +1637,7 @@
           "Microsoft.CodeAnalysis.Workspaces.Common": "5.0.0",
           "Microsoft.CodeAnalysis.Workspaces.MSBuild": "5.0.0",
           "Microsoft.DotNet.Scaffolding.Shared": "10.0.2",
-          "Microsoft.EntityFrameworkCore": "10.0.2",
+          "Microsoft.EntityFrameworkCore": "10.0.5",
           "Microsoft.EntityFrameworkCore.Design": "10.0.2",
           "Microsoft.Extensions.DependencyModel": "10.0.2",
           "Microsoft.VisualStudio.Web.CodeGeneration": "10.0.2",
@@ -1876,6 +1895,113 @@
           "lib/net9.0/System.Security.Cryptography.ProtectedData.dll": {
             "assemblyVersion": "9.0.0.0",
             "fileVersion": "9.0.625.26613"
+          }
+        }
+      },
+      "Abc.Aids/1.0.0": {
+        "runtime": {
+          "Abc.Aids.dll": {
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "Abc.Data/1.0.0": {
+        "dependencies": {
+          "Abc.Aids": "1.0.0"
+        },
+        "runtime": {
+          "Abc.Data.dll": {
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "Abc.Domain/1.0.0": {
+        "dependencies": {
+          "Abc.Data": "1.0.0"
+        },
+        "runtime": {
+          "Abc.Domain.dll": {
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "Abc.Infra/1.0.0": {
+        "dependencies": {
+          "Abc.Domain": "1.0.0",
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "10.0.5",
+          "Microsoft.EntityFrameworkCore": "10.0.5"
+        },
+        "runtime": {
+          "Abc.Infra.dll": {
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "Abc.Jobs/1.0.0": {
+        "dependencies": {
+          "Abc.Infra": "1.0.0"
+        },
+        "runtime": {
+          "Abc.Jobs.dll": {
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "Abc.Shared/1.0.0": {
+        "dependencies": {
+          "Abc.Jobs": "1.0.0"
+        },
+        "runtime": {
+          "Abc.Shared.dll": {
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "Abc.Aids.Reference/1.0.0.0": {
+        "runtime": {
+          "Abc.Aids.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Abc.Data.Reference/1.0.0.0": {
+        "runtime": {
+          "Abc.Data.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Abc.Domain.Reference/1.0.0.0": {
+        "runtime": {
+          "Abc.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Abc.Infra.Reference/1.0.0.0": {
+        "runtime": {
+          "Abc.Infra.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Abc.Jobs.Reference/1.0.0.0": {
+        "runtime": {
+          "Abc.Jobs.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Abc.Shared.Reference/1.0.0.0": {
+        "runtime": {
+          "Abc.Shared.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
           }
         }
       }
@@ -2272,6 +2398,13 @@
       "path": "microsoft.aspnetcore.diagnostics.entityframeworkcore/10.0.2",
       "hashPath": "microsoft.aspnetcore.diagnostics.entityframeworkcore.10.0.2.nupkg.sha512"
     },
+    "Microsoft.AspNetCore.Identity.EntityFrameworkCore/10.0.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-oo1uauTwgcnhYgituZ2nI3wJ8XN9z76ggu2zkOJu1BCfOOsqr+g08Kr4MOiMuXEhwySkpIV+MVoC25hC1288NA==",
+      "path": "microsoft.aspnetcore.identity.entityframeworkcore/10.0.5",
+      "hashPath": "microsoft.aspnetcore.identity.entityframeworkcore.10.0.5.nupkg.sha512"
+    },
     "Microsoft.AspNetCore.Razor.Language/6.0.24": {
       "type": "package",
       "serviceable": true,
@@ -2405,19 +2538,19 @@
       "path": "microsoft.dotnet.scaffolding.shared/10.0.2",
       "hashPath": "microsoft.dotnet.scaffolding.shared.10.0.2.nupkg.sha512"
     },
-    "Microsoft.EntityFrameworkCore/10.0.2": {
+    "Microsoft.EntityFrameworkCore/10.0.5": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-d3+XKbLSHPCu3vwpXECoXcFbvGKmAhEeUmc1xy2czmuPnEF7rZN2HP5ZGMwCMbAKk4B01+nS4HixSMo2Vf/Y9g==",
-      "path": "microsoft.entityframeworkcore/10.0.2",
-      "hashPath": "microsoft.entityframeworkcore.10.0.2.nupkg.sha512"
+      "sha512": "sha512-9tNBmK3EpYVGRQLiqP+bqK2m+TD0Gv//4vCzR7ZOgl4FWzCFyOpYdIVka13M4kcBdPdSJcs3wbHr3rmzOqbIMA==",
+      "path": "microsoft.entityframeworkcore/10.0.5",
+      "hashPath": "microsoft.entityframeworkcore.10.0.5.nupkg.sha512"
     },
-    "Microsoft.EntityFrameworkCore.Abstractions/10.0.2": {
+    "Microsoft.EntityFrameworkCore.Abstractions/10.0.5": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-BzAwIU5mYeOmnKbEXrkwx7feW2V+zUTrK/kRonSib94tjvc0/iRj2a4N6YGXRhTNjaFP3tvCMIDaX1vIFF6dkg==",
-      "path": "microsoft.entityframeworkcore.abstractions/10.0.2",
-      "hashPath": "microsoft.entityframeworkcore.abstractions.10.0.2.nupkg.sha512"
+      "sha512": "sha512-32c58Rnm47Qvhimawf67KO9PytgPz3QoWye7Abapt0Yocw/JnzMiSNj/pRoIKyn8Jxypkv86zxKD4Q/zNTc0Ag==",
+      "path": "microsoft.entityframeworkcore.abstractions/10.0.5",
+      "hashPath": "microsoft.entityframeworkcore.abstractions.10.0.5.nupkg.sha512"
     },
     "Microsoft.EntityFrameworkCore.Design/10.0.2": {
       "type": "package",
@@ -2426,12 +2559,12 @@
       "path": "microsoft.entityframeworkcore.design/10.0.2",
       "hashPath": "microsoft.entityframeworkcore.design.10.0.2.nupkg.sha512"
     },
-    "Microsoft.EntityFrameworkCore.Relational/10.0.2": {
+    "Microsoft.EntityFrameworkCore.Relational/10.0.5": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-1fUeyNmqDNfMogJ2ut7OKO57/WGjjkHMYeX51SpA3PwP7ftbx8g/Z3fbErD+1q14DILrqJfsszYsYhGssBRfDg==",
-      "path": "microsoft.entityframeworkcore.relational/10.0.2",
-      "hashPath": "microsoft.entityframeworkcore.relational.10.0.2.nupkg.sha512"
+      "sha512": "sha512-uxmFjZEAB/KbsgWFSS4lLqkEHCfXxB2x0UcbiO4e5fCRpFFeTMSx/me6009nYJLu5IKlDwO1POh++P6RilFTDw==",
+      "path": "microsoft.entityframeworkcore.relational/10.0.5",
+      "hashPath": "microsoft.entityframeworkcore.relational.10.0.5.nupkg.sha512"
     },
     "Microsoft.EntityFrameworkCore.SqlServer/10.0.2": {
       "type": "package",
@@ -2740,6 +2873,66 @@
       "sha512": "sha512-yErfw/3pZkJE/VKza/Cm5idTpIKOy/vsmVi59Ta5SruPVtubzxb8CtnE8tyUpzs5pr0Y28GUFfSVzAhCLN3F/Q==",
       "path": "system.security.cryptography.protecteddata/9.0.6",
       "hashPath": "system.security.cryptography.protecteddata.9.0.6.nupkg.sha512"
+    },
+    "Abc.Aids/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Abc.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Abc.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Abc.Infra/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Abc.Jobs/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Abc.Shared/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Abc.Aids.Reference/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Abc.Data.Reference/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Abc.Domain.Reference/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Abc.Infra.Reference/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Abc.Jobs.Reference/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Abc.Shared.Reference/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

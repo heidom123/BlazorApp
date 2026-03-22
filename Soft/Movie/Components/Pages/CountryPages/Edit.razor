@@ -1,0 +1,64 @@
+﻿@page "/countries/edit"
+@using Abc.Data
+@using Abc.Infra
+@using Abc.Shared.Components
+@using Microsoft.EntityFrameworkCore
+@inject NavigationManager NavigationManager
+@inject ICountriesRepo repo
+
+<PageTitle>EditCountry</PageTitle>
+
+<h1>EditCountry</h1>
+
+<h2>EditCountry</h2>
+<hr />
+@if (country is null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <div class="row">
+    <div class="col-md-4">
+        <EditForm method="post" Model="country" OnValidSubmit="updateCountry" FormName="edit" Enhance>
+            <DataAnnotationsValidator />
+            <ValidationSummary role="alert" />
+            <input type="hidden" name="country.Id" value="@country.Id" />
+            <MyPropertyEditor TValue="string" Id="name" Label="Name:" @bind-Value="country.Name" />
+            <MyPropertyEditor TValue="string" Id="code" Label="Code:" @bind-Value="country.Code" />
+            <MyPropertyEditor TValue="string" Id="details" Label="Details:" @bind-Value="country.Details" />
+            <MyPropertyEditor TValue="string" Id="isoCode" Label="ISO Code:" @bind-Value="country.IsoCode" />
+            <MyPropertyEditor TValue="string" Id="nativeName" Label="Native Name:" @bind-Value="country.NativeName" />
+            <MyPropertyEditor TValue="string" Id="numericCode" Label="Numeric Code:" @bind-Value="country.NumericCode" />
+            <MyPropertyEditor TValue="string" Id="officialName" Label="Official Name:" @bind-Value="country.OfficialName" />
+            <MyPropertyEditor TValue="DateTime" Id="validFrom" Label="Valid From:" @bind-Value="country.ValidFrom" />
+            <MyPropertyEditor TValue="DateTime" Id="validTo" Label="Valid To:" @bind-Value="country.ValidTo" />
+            <button type="submit" class="btn btn-primary">Save</button>
+        </EditForm>
+    </div>
+</div>
+}
+
+<div>
+    <a href="/movies">Back to List</a>
+</div>
+
+@code {
+    [SupplyParameterFromQuery] private Guid Id { get; set; }
+    [SupplyParameterFromForm] private Country country { get; set; }
+    protected override async Task OnInitializedAsync()
+    {      
+		country ??= await repo.GetAsync(Id);
+        if (country is null) NavigationManager.NotFound();
+    }
+
+    // To protect from overposting attacks, enable the specific properties you want to bind to.
+    // For more information, see https://learn.microsoft.com/aspnet/core/blazor/forms/#mitigate-overposting-attacks.
+    private async Task updateCountry()
+    {        
+		await repo.UpdateAsync(country!);
+        NavigationManager.NavigateTo("/countries");
+    }
+
+ 
+}

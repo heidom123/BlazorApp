@@ -1,0 +1,45 @@
+﻿@page "/countries/delete"
+@using Abc.Data
+@using Abc.Infra
+@using Abc.Shared.Components
+@using Microsoft.EntityFrameworkCore
+@inject ICountriesRepo repo
+@inject NavigationManager NavigationManager
+
+<PageTitle>DeleteCountry</PageTitle>
+
+<h1>DeleteCountry</h1>
+
+<p>Are you sure you want to delete this?</p>
+<div>
+    <h2>DeleteCountry</h2>
+    <hr />
+    @if (country is null)
+    {
+        <p><em>Loading...</em></p>
+    }
+    else {
+        <MyEntityViewer Entity="country" />
+        <EditForm method="post" Model="country" OnValidSubmit="DeleteCountry" FormName="delete" Enhance>
+            <button type="submit" class="btn btn-danger" disabled="@(country is null)">Delete</button> |
+            <a href="/movies">Back to List</a>
+        </EditForm>
+    }
+</div>
+
+@code {
+    private Country country;
+
+    [SupplyParameterFromQuery]
+    private Guid Id { get; set; }
+
+    protected override async Task OnInitializedAsync() {
+		country = await repo.GetAsync(Id);
+        if (country is null) NavigationManager.NotFound();
+    }
+
+    private async Task DeleteCountry() {
+		await repo.DeleteAsync(Id);
+        NavigationManager.NavigateTo("/movies");
+    }
+}

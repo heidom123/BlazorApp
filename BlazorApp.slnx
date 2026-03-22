@@ -10,7 +10,7 @@
   </Folder>
   <Folder Name="/Soft/" />
   <Folder Name="/Soft/Movie/">
-    <Project Path="../Movie/Movie/Movie.csproj" />
+    <Project Path="Soft/Movie/Movie.csproj" />
   </Folder>
   <Folder Name="/Soft/Todo/">
     <Project Path="Soft/Todo/Client/Todo.Client.csproj" />

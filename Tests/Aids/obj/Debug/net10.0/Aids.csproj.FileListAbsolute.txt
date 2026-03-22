@@ -270,3 +270,5 @@ C:\Users\heido.mustkivi\source\repos\BlazorApp\Tests\Aids\obj\Debug\net10.0\refi
 C:\Users\heido.mustkivi\source\repos\BlazorApp\Tests\Aids\obj\Debug\net10.0\Abc.Tests.Aids.pdb
 C:\Users\heido.mustkivi\source\repos\BlazorApp\Tests\Aids\obj\Debug\net10.0\Aids.genruntimeconfig.cache
 C:\Users\heido.mustkivi\source\repos\BlazorApp\Tests\Aids\obj\Debug\net10.0\ref\Abc.Tests.Aids.dll
+C:\Users\heido.mustkivi\source\repos\BlazorApp\Tests\Aids\bin\Debug\net10.0\Abc.Data.dll
+C:\Users\heido.mustkivi\source\repos\BlazorApp\Tests\Aids\bin\Debug\net10.0\Abc.Data.pdb
