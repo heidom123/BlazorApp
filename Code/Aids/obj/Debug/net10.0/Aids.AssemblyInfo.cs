@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Abc.Aids")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b09682a4c4641200aa9a15b918be641539eb41b0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a668e5fa367e2cb8cefd5299476aff366653eb76")]
 [assembly: System.Reflection.AssemblyProductAttribute("Abc.Aids")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Abc.Aids")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
