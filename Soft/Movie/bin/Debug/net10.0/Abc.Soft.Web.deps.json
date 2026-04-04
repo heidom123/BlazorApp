@@ -2135,7 +2135,8 @@
       },
       "Abc.Shared/1.0.0": {
         "dependencies": {
-          "Abc.Jobs": "1.0.0"
+          "Abc.Jobs": "1.0.0",
+          "Microsoft.AspNetCore.Components.QuickGrid": "10.0.5"
         },
         "runtime": {
           "Abc.Shared.dll": {

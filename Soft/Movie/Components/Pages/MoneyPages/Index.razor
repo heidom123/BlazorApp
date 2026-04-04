@@ -1,0 +1,18 @@
+﻿@page "/moneys"
+@rendermode InteractiveServer
+@inject IMoneysRepo repo
+
+<MyIndexPage TItem="Money"
+             PageTitleText="Moneys"
+             EntityTitle="Money"
+             Items="moneys"
+             BasePath="/moneys" />
+
+@code {
+    private IQueryable<Money> moneys = Enumerable.Empty<Money>().AsQueryable();
+    protected override async Task OnInitializedAsync() {
+        if (repo is null) return;
+        moneys = (await repo.GetAsync()).AsQueryable();
+    }
+}
+

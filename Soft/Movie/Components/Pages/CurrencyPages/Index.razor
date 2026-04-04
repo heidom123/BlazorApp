@@ -1,0 +1,18 @@
+﻿@page "/currencies"
+@rendermode InteractiveServer
+@inject ICurrenciesRepo repo
+
+<MyIndexPage TItem="Currency"
+             PageTitleText="Currencies"
+             EntityTitle="Currency"
+             Items="currencies"
+             BasePath="/currencies" />
+
+@code {
+    private IQueryable<Currency> currencies = Enumerable.Empty<Currency>().AsQueryable();
+    protected override async Task OnInitializedAsync() {
+        if (repo is null) return;
+        currencies = (await repo.GetAsync()).AsQueryable();
+    }
+}
+

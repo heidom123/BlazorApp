@@ -15,11 +15,16 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.QuickGrid" Version="10.0.5" />
     <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="10.*" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Jobs\Jobs.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Code\" />
   </ItemGroup>
 
 </Project>

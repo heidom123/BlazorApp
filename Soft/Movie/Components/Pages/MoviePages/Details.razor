@@ -1,55 +1,18 @@
 ﻿@page "/movies/details"
-@using Microsoft.EntityFrameworkCore
-@using Abc.Data
-@using Abc.Infra
-@inject IDbContextFactory<ApplicationDbContext> DbFactory
+@inject IMoviesRepo repo
 @inject NavigationManager NavigationManager
 
-<PageTitle>Details</PageTitle>
-
-<h1>Details</h1>
-
-<div>
-    <h2>Movie</h2>
-    <hr />
-    @if (movie is null)
-    {
-        <p><em>Loading...</em></p>
-    }
-    else {
-        <dl class="row">
-            <dt class="col-sm-2">Title</dt>
-            <dd class="col-sm-10">@movie.Name</dd>
-            <dt class="col-sm-2">Release Date</dt>
-            <dd class="col-sm-10">@movie.ValidFrom</dd>
-            <dt class="col-sm-2">Genre</dt>
-            <dd class="col-sm-10">@movie.Genre</dd>
-            <dt class="col-sm-2">Price</dt>
-            <dd class="col-sm-10">@movie.Price</dd>
-            <dt class="col-sm-2">Rating</dt>
-            <dd class="col-sm-10">@movie.Rating</dd>
-        </dl>
-        <div>
-            <a href="@($"/movies/edit?id={movie.Id}")">Edit</a> |
-            <a href="@($"/movies")">Back to List</a>
-        </div>
-    }
-</div>
+<MyDetailsPage PageTitleText="Movie Details"
+               EntityTitle="@movie?.Name"
+               BasePath="/movies"
+               Entity="movie"
+			   EntityId="Id" />
 
 @code {
-    private Movie? movie;
-
-    [SupplyParameterFromQuery]
-    private Guid Id { get; set; }
-
-    protected override async Task OnInitializedAsync()
-    {
-        using var context = DbFactory.CreateDbContext();
-        movie = await context.Movies.FirstOrDefaultAsync(m => m.Id == Id);
-
-        if (movie is null)
-        {
-            NavigationManager.NotFound();
-        }
+    private Movie movie;
+    [SupplyParameterFromQuery] private Guid Id { get; set; }
+    protected override async Task OnInitializedAsync() {
+        movie = await repo.GetAsync(Id);
+        if (movie is null) NavigationManager.NotFound();
     }
 }

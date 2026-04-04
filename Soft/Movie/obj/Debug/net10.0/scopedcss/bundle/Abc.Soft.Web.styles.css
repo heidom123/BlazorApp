@@ -364,6 +364,16 @@ main[b-sqlpkvzydt] {
         opacity: 0;
     }
 }
+/* /Components/Pages/CountryCurrencyPages/Index.razor.rz.scp.css */
+body[b-apubf94b0w] {
+}
+[b-apubf94b0w] tr {
+    height: 3em;
+}
+
+    [b-apubf94b0w] tr > td {
+        vertical-align: middle;
+    }
 /* /Components/Pages/CountryPages/Index.razor.rz.scp.css */
 body[b-7kn5srskfb] {
 }
@@ -372,6 +382,26 @@ body[b-7kn5srskfb] {
 }
 
     [b-7kn5srskfb] tr > td {
+        vertical-align: middle;
+    }
+/* /Components/Pages/CurrencyPages/Index.razor.rz.scp.css */
+body[b-l72uwkqouu] {
+}
+[b-l72uwkqouu] tr {
+    height: 3em;
+}
+
+    [b-l72uwkqouu] tr > td {
+        vertical-align: middle;
+    }
+/* /Components/Pages/MoneyPages/Index.razor.rz.scp.css */
+body[b-8ic3npmhe5] {
+}
+[b-8ic3npmhe5] tr {
+    height: 3em;
+}
+
+    [b-8ic3npmhe5] tr > td {
         vertical-align: middle;
     }
 /* /Components/Pages/MoviePages/Index.razor.rz.scp.css */

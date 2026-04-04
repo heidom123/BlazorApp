@@ -5,7 +5,7 @@ var e=!1;const t=async()=>WebAssembly.validate(new Uint8Array([0,97,115,109,1,0,
   "mainAssemblyName": "Abc.Soft.Web.Client",
   "applicationEnvironment": "Development",
   "resources": {
-    "hash": "sha256-Evuqz2Bsg+QTy7nuXZXFzyARWsNwtB76RXnC6P1xhOI=",
+    "hash": "sha256-g06/RHfFCWgees72LeIyywanBAa5kIkvL+93gNUQk7Y=",
     "jsModuleNative": [
       {
         "name": "dotnet.native.69poregybn.js"
@@ -1254,16 +1254,16 @@ var e=!1;const t=async()=>WebAssembly.validate(new Uint8Array([0,97,115,109,1,0,
       },
       {
         "virtualPath": "Abc.Soft.Web.Client.wasm",
-        "name": "Abc.Soft.Web.Client.umt7owwinx.wasm",
-        "integrity": "sha256-xqne6QFWn39ZWA+FbsvAYbgAMhSI+SFGkAvRTuyFfzE=",
+        "name": "Abc.Soft.Web.Client.htqk7mmv1b.wasm",
+        "integrity": "sha256-xWPu9pKv8YBNI+Ru8ZhVS45DQPLc+BkocYn7g9pC9wE=",
         "cache": "force-cache"
       }
     ],
     "pdb": [
       {
         "virtualPath": "Abc.Soft.Web.Client.pdb",
-        "name": "Abc.Soft.Web.Client.l2034zhho3.pdb",
-        "integrity": "sha256-45zMxEh5Rs6BgQp0yFfClazyT6qjUBP3qeJl5xFCo1M=",
+        "name": "Abc.Soft.Web.Client.fyciq086ng.pdb",
+        "integrity": "sha256-6ZOTivPTG6Gn6YwV+vOiuLkgjO7ujPepU/vzhdHwmbM=",
         "cache": "force-cache"
       }
     ],

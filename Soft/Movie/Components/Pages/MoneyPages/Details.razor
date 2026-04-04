@@ -1,0 +1,18 @@
+﻿@page "/moneys/details"
+@inject NavigationManager NavigationManager
+@inject IMoneysRepo repo
+
+<MyDetailsPage PageTitleText="Money Details"
+               EntityTitle="@($"{money?.Amount}")"
+               BasePath="/moneys"
+               Entity="money"
+               EntityId="Id" />
+
+@code {
+    private Money money;
+    [SupplyParameterFromQuery] private Guid Id { get; set; }
+    protected override async Task OnInitializedAsync() {
+        money = await repo.GetAsync(Id);
+        if (money is null) NavigationManager.NotFound();
+    }
+}

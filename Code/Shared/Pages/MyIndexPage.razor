@@ -1,0 +1,18 @@
+﻿@typeparam TItem where TItem : BaseEntity
+<PageTitle>@PageTitleText</PageTitle>
+
+<h1>@EntityTitle</h1>
+
+<p>
+    <a href=@($"{BasePath}/create")>Create New</a>
+</p>
+<div>
+    <MyEntitiesTable TEntity="TItem" Entities="Items" BasePath="@BasePath" />
+</div>
+
+@code {
+    [Parameter] public string PageTitleText { get; set; } = "";
+    [Parameter] public string EntityTitle { get; set; }
+    [Parameter] public IQueryable<TItem> Items { get; set; }
+    [Parameter] public string BasePath { get; set; }
+}

@@ -8,9 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 var dbFile = Path.Combine(builder.Environment.ContentRootPath, "Data", "app.db");
 builder.Services.AddDbContextFactory<ApplicationDbContext>(options =>
     options.UseSqlite($"Data Source={dbFile}"));
-
 builder.Services.AddQuickGridEntityFrameworkAdapter();
-
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
 // Add services to the container.
