@@ -1,5 +1,4 @@
 ﻿using Abc.Data.Common;
-using System.ComponentModel.DataAnnotations;
 
 namespace Abc.Data;
 
@@ -8,5 +7,7 @@ public class Country : NamedEntity {
     public string NativeName { get; set; } = "";
     public string NumericCode { get; set; } = "";
     bool IsIsoCountry { get; set; }
+    bool IsLoyaltyProgram { get; set; }
     public string IsoCode { get; set; } = "";
+    public IEnumerable<CountryCurrency> Currencies { get; set; } = [];
 }

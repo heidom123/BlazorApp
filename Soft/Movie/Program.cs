@@ -20,6 +20,8 @@ builder.Services.AddRazorComponents()
 builder.Services.AddScoped<IMoviesRepo, MoviesRepo>();
 builder.Services.AddScoped<ICountriesRepo, CountriesRepo>();
 builder.Services.AddScoped<ICurrenciesRepo, CurrenciesRepo>();
+builder.Services.AddScoped<IMoneysRepo, MoneysRepo>();
+builder.Services.AddScoped<ICountryCurrenciesRepo, CountryCurrenciesRepo>();
 var app = builder.Build();
 
 using (var scope = app.Services.CreateScope())

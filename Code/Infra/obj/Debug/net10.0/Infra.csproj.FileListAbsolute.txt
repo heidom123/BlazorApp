@@ -19,6 +19,7 @@ C:\Users\heido.mustkivi\source\repos\BlazorApp\Code\Infra\obj\Debug\net10.0\refi
 C:\Users\heido.mustkivi\source\repos\BlazorApp\Code\Infra\obj\Debug\net10.0\Abc.Infra.pdb
 C:\Users\heido.mustkivi\source\repos\BlazorApp\Code\Infra\obj\Debug\net10.0\ref\Abc.Infra.dll
 C:\Users\heido\source\repos\heidom123\BlazorApp\Code\Infra\bin\Debug\net10.0\Abc.Infra.deps.json
+C:\Users\heido\source\repos\heidom123\BlazorApp\Code\Infra\bin\Debug\net10.0\Abc.Infra.runtimeconfig.json
 C:\Users\heido\source\repos\heidom123\BlazorApp\Code\Infra\bin\Debug\net10.0\Abc.Infra.dll
 C:\Users\heido\source\repos\heidom123\BlazorApp\Code\Infra\bin\Debug\net10.0\Abc.Infra.pdb
 C:\Users\heido\source\repos\heidom123\BlazorApp\Code\Infra\bin\Debug\net10.0\Abc.Aids.dll
@@ -37,6 +38,5 @@ C:\Users\heido\source\repos\heidom123\BlazorApp\Code\Infra\obj\Debug\net10.0\Inf
 C:\Users\heido\source\repos\heidom123\BlazorApp\Code\Infra\obj\Debug\net10.0\Abc.Infra.dll
 C:\Users\heido\source\repos\heidom123\BlazorApp\Code\Infra\obj\Debug\net10.0\refint\Abc.Infra.dll
 C:\Users\heido\source\repos\heidom123\BlazorApp\Code\Infra\obj\Debug\net10.0\Abc.Infra.pdb
-C:\Users\heido\source\repos\heidom123\BlazorApp\Code\Infra\obj\Debug\net10.0\ref\Abc.Infra.dll
-C:\Users\heido\source\repos\heidom123\BlazorApp\Code\Infra\bin\Debug\net10.0\Abc.Infra.runtimeconfig.json
 C:\Users\heido\source\repos\heidom123\BlazorApp\Code\Infra\obj\Debug\net10.0\Infra.genruntimeconfig.cache
+C:\Users\heido\source\repos\heidom123\BlazorApp\Code\Infra\obj\Debug\net10.0\ref\Abc.Infra.dll

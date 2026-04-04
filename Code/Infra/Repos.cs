@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Abc.Data;
+﻿using Abc.Data;
 
 namespace Abc.Infra;
 
@@ -13,4 +10,8 @@ public class CurrenciesRepo(ApplicationDbContext c = null)
 
 public class CountriesRepo(ApplicationDbContext c = null)
     : EfBaseRepo<ApplicationDbContext, Country>(c), ICountriesRepo { }
+public class MoneysRepo(ApplicationDbContext c = null)
+    : EfBaseRepo<ApplicationDbContext, Money>(c), IMoneysRepo { }
+public class CountryCurrenciesRepo(ApplicationDbContext c = null)
+    : EfBaseRepo<ApplicationDbContext, CountryCurrency>(c), ICountryCurrenciesRepo { }
 
