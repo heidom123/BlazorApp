@@ -1,18 +1,14 @@
 ﻿@page "/countrycurrencies"
-@rendermode InteractiveServer
 @inject ICountryCurrenciesRepo repo
+@attribute [ExcludeFromInteractiveRouting]
+@inject NavigationManager NavigationManager
 
 <MyIndexPage TItem="CountryCurrency"
              PageTitleText="CountryCurrencies"
              EntityTitle="CountryCurrency"
-             Items="countrycurrencies"
+             Repo="repo"
              BasePath="/countrycurrencies" />
 
 @code {
-    private IQueryable<CountryCurrency> countrycurrencies = Enumerable.Empty<CountryCurrency>().AsQueryable();
-    protected override async Task OnInitializedAsync() {
-        if (repo is null) return;
-        countrycurrencies = (await repo.GetAsync()).AsQueryable();
-    }
 }
 

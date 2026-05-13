@@ -1,13 +1,14 @@
-﻿using Abc.Data.Common;
+﻿using Abc.Aids;
+using Abc.Data.Common;
 
 namespace Abc.Data;
 
 public class Country : NamedEntity {
-    public string OfficialName { get; set; } = "";
-    public string NativeName { get; set; } = "";
-    public string NumericCode { get; set; } = "";
+    [Random(5, 15)] public string OfficialName { get; set; } = "";
+    [Random(5, 15)] public string NativeName { get; set; } = "";
+    [Random(3, 5)] public string NumericCode { get; set; } = "";
     bool IsIsoCountry { get; set; }
     bool IsLoyaltyProgram { get; set; }
-    public string IsoCode { get; set; } = "";
+    [Random(2, 5)] public string IsoCode { get; set; } = "";
     public IEnumerable<CountryCurrency> Currencies { get; set; } = [];
 }

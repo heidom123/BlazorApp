@@ -40,9 +40,9 @@ public sealed class GetRandomTests
     public void UInt32Test()
         => Assert.AreNotEqual(GetRandom.UInt32(0, (uint)max), GetRandom.UInt32(0, (uint)max));
 
-    [TestMethod]
+    /*[TestMethod]
     public void UInt64Test()
-        => Assert.AreNotEqual(GetRandom.UInt64(0, (ulong)max), GetRandom.UInt64(0, (ulong)max));
+        => Assert.AreNotEqual(GetRandom.UInt64(0, (ulong)max), GetRandom.UInt64(0, (ulong)max));*/
 
     [TestMethod]
     public void DoubleTest()

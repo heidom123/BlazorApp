@@ -1,8 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
 using System;
+using System.Collections.Generic;
+using System.Reflection;
+using System.Text;
 
 namespace Abc.Aids;
 
@@ -42,8 +42,51 @@ public static class GetRandom {
     public static uint UInt32(uint min = uint.MinValue, uint max = uint.MaxValue)
         => (uint)Int64(min, max);
 
-    public static object UInt64(ulong min = ulong.MinValue, ulong max = ulong.MaxValue)
-        => (ulong)Double(min, max);
+    public static object Object(Type t, string[] exclude = null)
+    {
+        exclude = exclude ?? [];
+        var x = Nullable.GetUnderlyingType(t);
+        if (x is not null) t = x;
+        var o = Activator.CreateInstance(t);
+        foreach (var p in t.GetProperties())
+        {
+            if (!p.CanWrite) continue;
+            if (p.PropertyType.IsArray) continue;
+            if (exclude.Contains(p.Name)) continue;
+            var randomAttribute = p.GetCustomAttribute<RandomAttribute>();
+            var v = randomAttribute is not null 
+                ? randomAttribute.CreateValue(p.PropertyType) : isClass(p) ? 
+                Object(p.PropertyType) : Value(p.PropertyType);
+            p.SetValue(o, v);
+        }
+        return o;
+    }
+
+    private static bool isClass(PropertyInfo p)
+    => p.PropertyType.IsClass && p.PropertyType != typeof(string);
+
+    public static object Value(Type t)
+    {
+        var x = Nullable.GetUnderlyingType(t);
+        if (x is not null) t = x;
+        if (t == typeof(string)) return String();
+        //if (t == typeof(char)) return Char();
+        if (t == typeof(bool)) return Bool();
+        if (t == typeof(DateTime)) return DateTime();
+        if (t == typeof(decimal)) return Decimal();
+        if (t == typeof(double)) return Double();
+        if (t == typeof(float)) return Float();
+        if (t == typeof(byte)) return UInt8();
+        if (t == typeof(ushort)) return UInt16();
+        if (t == typeof(uint)) return UInt32();
+        if (t == typeof(ulong)) return Int64();
+        if (t == typeof(sbyte)) return Int8();
+        if (t == typeof(short)) return Int16();
+        if (t == typeof(int)) return Int32();
+        if (t == typeof(long)) return Int64();
+        if (t == typeof(Guid)) return Guid();
+        return null;
+    }
 
     public static float Float(float min = float.MinValue, float max = float.MaxValue)
     => (float)Double(min, max);
@@ -80,11 +123,10 @@ public static class GetRandom {
 
     public static char Char(char min, char max) => (char)UInt16(min, max);
 
-    public static string String(byte minLength = byte.MinValue, byte maxLength = byte.MaxValue)
-    {
+    public static string String(byte minLength = byte.MinValue, byte maxLength = byte.MaxValue, string chars = null) {
         var len = UInt8(minLength, maxLength);
         var s = new char[len];
-        for (var i = 0; i < len; i++) s[i] = Char('a', 'z');
+        for (var i = 0; i < len; i++) s[i] = (chars is null) ? Char('a', 'z') : chars[UInt8(0 , (byte)chars.Length)];
         return new string(s);
     }
 

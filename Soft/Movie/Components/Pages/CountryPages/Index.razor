@@ -1,18 +1,14 @@
 ﻿@page "/countries"
-@rendermode InteractiveServer
+@attribute [ExcludeFromInteractiveRouting]
+@inject NavigationManager NavigationManager
 @inject ICountriesRepo repo
 
 <MyIndexPage TItem="Country"
 			 PageTitleText="Countries"
-			 EntityTitle="Country"
-			 Items="countries"
+			 EntityTitle="Country"             
+			 Repo="repo"
 			 BasePath="/countries" />
 
 @code {
-    private IQueryable<Country> countries = Enumerable.Empty<Country>().AsQueryable();
-    protected override async Task OnInitializedAsync() {
-        if (repo is null) return;
-        countries = (await repo.GetAsync()).AsQueryable();
-    }
 }
 

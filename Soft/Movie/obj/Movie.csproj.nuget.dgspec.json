@@ -1089,7 +1089,7 @@
             },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[10.0.5, )"
+              "version": "[10.0.7, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "target": "Package",
@@ -1103,6 +1103,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[10.*, )"
+            },
+            "System.Security.Cryptography.Xml": {
+              "target": "Package",
+              "version": "[10.0.7, )"
             }
           },
           "imports": [
@@ -2185,6 +2189,14 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[10.*, )"
+            },
+            "NuGet.Packaging": {
+              "target": "Package",
+              "version": "[7.3.1, )"
+            },
+            "NuGet.Protocol": {
+              "target": "Package",
+              "version": "[7.3.1, )"
             }
           },
           "imports": [

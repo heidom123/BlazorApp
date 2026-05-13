@@ -17,9 +17,13 @@
             }
         </select>
     </form>
-    <button class="btn btn-primary" @onclick="generateValue">Generate value</button>
-    <input type="text" id="userParameterMin" name="userParameterMin" @bind="userParameterMin" />
-    <input type="text" id="userParameterMax" name="userParameterMax" @bind="userParameterMax" />
+    <div style="display:flex; flex-direction:column">
+        <div style="display:flex; flex-direction:row; text-align:center">
+        <p>Min</p> <input type="text" id="userParameterMin" name="userParameterMin" @bind="userParameterMin" />
+        <p>Max</p> <input type="text" id="userParameterMax" name="userParameterMax" @bind="userParameterMax" />
+        </div>
+        <button style="width:200px" class="btn btn-primary" @onclick="generateValue">Generate value</button>
+    </div>
     <p>Hetkel on valitud: @selectedString</p>
     <p>Random value: @genRandomValue</p>
     
@@ -57,25 +61,21 @@
     {        
         selectedString = e.Value.ToString();
     }
-
+    
     private void generateValue()
     {
         if (string.IsNullOrEmpty(selectedString)) selectedString = "Int32";
         Type type = typeof(GetRandom);
-        MethodInfo mi = type.GetMethod(selectedString);
-
-        /*
-         Tahaks teha nii, et võtab meetodi paramettrite tüübid ning konverdib sisestatud väärtused sellesse tüüpi
-         ilma et peaks  if else jada tegema
+        MethodInfo mi = type.GetMethod(selectedString);      
+         //Tahaks teha nii, et võtab meetodi paramettrite tüübid ning konverdib sisestatud väärtused sellesse tüüpi
+         //ilma et peaks  if else jada tegema
          ParameterInfo[] parameters = mi.GetParameters();
         parameters = parameters;
-        if(parameters.Length != 0)
-        {
+        if(parameters.Length != 0) {
             foreach(var p in parameters) {
-				Type parameterType = p.ParameterType;
-                parameterType min
+				Type parameterType = p.ParameterType;               
             }
-        }*/
+        }
         if (selectedString.Contains("Int"))
         {
             Int32.TryParse(userParameterMin, out int min);

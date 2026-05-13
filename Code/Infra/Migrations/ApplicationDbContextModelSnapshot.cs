@@ -15,7 +15,7 @@ namespace Abc.Infra.Migrations
         protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
-            modelBuilder.HasAnnotation("ProductVersion", "10.0.5");
+            modelBuilder.HasAnnotation("ProductVersion", "10.0.7");
 
             modelBuilder.Entity("Abc.Data.Country", b =>
                 {
@@ -415,13 +415,15 @@ namespace Abc.Infra.Migrations
 
             modelBuilder.Entity("Abc.Data.CountryCurrency", b =>
                 {
-                    b.HasOne("Abc.Data.Country", null)
+                    b.HasOne("Abc.Data.Country", "Country")
                         .WithMany("Currencies")
                         .HasForeignKey("CountryId");
 
                     b.HasOne("Abc.Data.Currency", "Currency")
                         .WithMany()
                         .HasForeignKey("CurrencyId");
+
+                    b.Navigation("Country");
 
                     b.Navigation("Currency");
                 });

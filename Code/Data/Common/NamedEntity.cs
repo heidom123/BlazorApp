@@ -1,8 +1,10 @@
-﻿namespace Abc.Data.Common;
+﻿using Abc.Aids;
+
+namespace Abc.Data.Common;
 
 public abstract class NamedEntity : DetailedEntity
 {
-    public virtual string Name { get; set; } = "";
-    public virtual string Code { get; set; } = "";
+    [Random(5,11)]public virtual string Name { get; set; } = "";
+    [Random(3, 4, "ABCDEFGH")] public virtual string Code { get; set; } = "";
 }
 
