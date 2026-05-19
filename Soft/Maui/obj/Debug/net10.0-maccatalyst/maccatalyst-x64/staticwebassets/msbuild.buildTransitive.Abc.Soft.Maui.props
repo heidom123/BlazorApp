@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\buildMultiTargeting\Abc.Soft.Maui.props" />
-</Project>
