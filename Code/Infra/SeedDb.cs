@@ -4,8 +4,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Abc.Infra;
 
-public sealed class SeedDb(ApplicationDbContext db, int recCnt = 20)
-{
+public sealed class SeedDb(ApplicationDbContext db, int recCnt = 20) {
     public async Task Seed()
     {
         await db.Database.MigrateAsync();

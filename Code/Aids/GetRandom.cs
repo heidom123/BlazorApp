@@ -42,8 +42,7 @@ public static class GetRandom {
     public static uint UInt32(uint min = uint.MinValue, uint max = uint.MaxValue)
         => (uint)Int64(min, max);
 
-    public static object Object(Type t, string[] exclude = null)
-    {
+    public static object Object(Type t, string[] exclude = null) {
         exclude = exclude ?? [];
         var x = Nullable.GetUnderlyingType(t);
         if (x is not null) t = x;
@@ -65,8 +64,7 @@ public static class GetRandom {
     private static bool isClass(PropertyInfo p)
     => p.PropertyType.IsClass && p.PropertyType != typeof(string);
 
-    public static object Value(Type t)
-    {
+    public static object Value(Type t) {
         var x = Nullable.GetUnderlyingType(t);
         if (x is not null) t = x;
         if (t == typeof(string)) return String();
@@ -94,8 +92,7 @@ public static class GetRandom {
     public static decimal Decimal(decimal min = decimal.MinValue, decimal max = decimal.MaxValue)
         => (decimal)Double((double)min, (double)max);
 
-    public static Guid Guid()
-    {
+    public static Guid Guid() {
         Span<byte> buffer = stackalloc byte[16];
         r.NextBytes(buffer);
         return new Guid(buffer);

@@ -7,7 +7,7 @@
             BasePath="/movies"
             OnValidSubmit="updateMovie"
             Entity="movie"
-			EntityId="Id" />
+			EntityId="@Id" />
 
 @code {
     [SupplyParameterFromQuery] private Guid Id { get; set; }

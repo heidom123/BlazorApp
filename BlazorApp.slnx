@@ -9,6 +9,11 @@
     <Project Path="Code/Shared/Shared.csproj" Id="878e82fa-fd50-4ecf-8909-a3bfbecd3c10" />
   </Folder>
   <Folder Name="/Soft/" />
+  <Folder Name="/Soft/App/">
+    <Project Path="Soft/Maui/Maui.csproj" Id="18b0b2e1-8ae4-40f3-91ba-b581974e31a4">
+      <Deploy Solution="Debug|*" />
+    </Project>
+  </Folder>
   <Folder Name="/Soft/Movie/">
     <Project Path="Soft/Movie/Movie.csproj" />
   </Folder>
@@ -18,6 +23,8 @@
   </Folder>
   <Folder Name="/Tests/">
     <Project Path="Tests/Aids/Aids.csproj" Id="738b5b4b-a1e1-49bb-887a-c0675479a7c5" />
+    <Project Path="Tests/Infrra/Infra.csproj" Id="5ae401e8-7fca-47f8-8185-279c7cf1fd64" />
+    <Project Path="Tests/Shared/Shared.csproj" Id="9c5d0620-4f6e-456c-bb5f-a1dcfc2cc640" />
     <Project Path="Tests/Tests.Data/Data.csproj" Id="339e90e2-afc1-42df-a152-59f87322a4dd" />
   </Folder>
 </Solution>

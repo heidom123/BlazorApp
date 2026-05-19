@@ -12,17 +12,17 @@ public class CurrenciesRepo(ApplicationDbContext c = null)
 public class CountriesRepo(ApplicationDbContext c = null)
     : EfBaseRepo<ApplicationDbContext, Country>(c), ICountriesRepo
 {
-    protected override IQueryable<Country> Query() => db.Countries
+    protected IQueryable<Country> Query() => db.Countries
         .Include(x => x.CountryCurrencies)
         .ThenInclude(x => x.Currency);
 }
-public class MoneyRepo(ApplicationDbContext c = null)
+public class MoneysRepo(ApplicationDbContext c = null)
     : EfBaseRepo<ApplicationDbContext, Money>(c), IMoneysRepo
 { }
 public class CountryCurrenciesRepo(ApplicationDbContext c = null)
     : EfBaseRepo<ApplicationDbContext, CountryCurrency>(c), ICountryCurrenciesRepo
 {
-    protected override IQueryable<CountryCurrency> Query() => db.CountryCurrencies
+    protected IQueryable<CountryCurrency> Query() => db.CountryCurrencies
             .Include(x => x.Country)
             .Include(x => x.Currency);
 }

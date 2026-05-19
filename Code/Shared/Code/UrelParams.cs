@@ -1,11 +1,11 @@
-﻿using Abc.Infra;
+﻿
+using Abc.Infra;
 
 namespace Abc.Shared.Code;
 
 public class UrlParams(Uri url)
 {
     private readonly Dictionary<string, string> d = [];
-
     public Query Parse()
     {
         var q = url?.Query?.TrimStart('?');
@@ -14,7 +14,6 @@ public class UrlParams(Uri url)
         foreach (var p in pars) add(p.Split('=', 2));
         return new Query(d);
     }
-
     private void add(string[] pair)
     {
         if (pair.Length != 2) return;

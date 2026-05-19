@@ -1,3 +1,4 @@
+
 using Abc.Aids;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Forms;
@@ -6,21 +7,22 @@ using System.Reflection;
 using System.Text.RegularExpressions;
 
 namespace Abc.Shared.Components;
-
 public interface IEditorAdapter {
     string DisplayName { get; }
     PropertyInfo PropInfo { get; }
     Type Editor { get; }
     Type Validator { get; }
+    bool HasEditor { get; }
+    bool HasProperty { get; }
     IDictionary<string, object> EditorParams { get; }
     IDictionary<string, object> ValidationParams { get; }
 }
 
-public sealed partial class EditorAdapter(ComponentBase c, object item, string propName) : IEditorAdapter
-{
+public sealed partial class EditorAdapter(ComponentBase c, object item, string propName) : IEditorAdapter {
+    public EditorAdapter() : this(null, null, null) { }
     public PropertyInfo PropInfo => ad?.PropInfo;
     public string DisplayName => hasName ? toName : string.Empty;
-    public Type Editor => isSelect ? typeof(MyEntitesSelect)
+    public Type Editor => isSelect ? typeof(MyEntitiesSelect)
                         : underlyingType.IsString() ? typeof(InputText)
                         : underlyingType.IsBool() ? typeof(InputCheckbox)
                         : underlyingType.IsDate() ? generic(typeof(InputDate<>), propType)
@@ -44,10 +46,9 @@ public sealed partial class EditorAdapter(ComponentBase c, object item, string p
             ["class"] = "text-danger"
         };
 
-    internal readonly IPropertyAdapter ad = new PropertyAdapter(item, propName);
+    public readonly IPropertyAdapter ad = new PropertyAdapter(item, propName);
     internal EventCallback<TValue> changed<TValue>()
-        => EventCallback.Factory.Create<TValue>(c, value =>
-        {
+        => EventCallback.Factory.Create<TValue>(c, value => {
             ad.SetValue(value);
             return Task.CompletedTask;
         });
@@ -69,17 +70,19 @@ public sealed partial class EditorAdapter(ComponentBase c, object item, string p
     internal object valChanged() => makeGeneric(method(nameof(changed)));
     internal object valExpression() => makeGeneric(method(nameof(expression)));
     internal static Type generic(Type editor, Type t) => editor.MakeGenericType(t);
-
     internal bool isSelect => hasSelect is not null && propType == typeof(Guid?);
     internal SelectAttribute hasSelect => ad?.PropInfo?.GetCustomAttribute<SelectAttribute>();
+    public bool HasEditor => Editor is not null;
+    public bool HasProperty => PropInfo is not null;
 }
+
 file static class EditorParamsExtensions
+{
+    public static IDictionary<string, object> withSelectParams(this IDictionary<string, object> d, SelectAttribute a)
     {
-        public static IDictionary<string, object> withSelectParams(this IDictionary<string, object> d, SelectAttribute a)
-        {
-            if (a is null) return d;
-            d[nameof(SelectAttribute.EntityType)] = a.EntityType;
-            d[nameof(SelectAttribute.DisplayProperty)] = a.DisplayProperty;
-            return d;
-        }
+        if (a is null) return d;
+        d[nameof(SelectAttribute.EntityType)] = a.EntityType;
+        d[nameof(SelectAttribute.DisplayProperty)] = a.DisplayProperty;
+        return d;
     }
+}

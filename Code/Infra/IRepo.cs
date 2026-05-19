@@ -1,6 +1,7 @@
 ﻿using Abc.Data.Common;
 using Abc.Data;
 
+
 namespace Abc.Infra;
 
 public interface IRepo<TEntity> where TEntity : BaseEntity {

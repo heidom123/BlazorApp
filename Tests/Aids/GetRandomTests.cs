@@ -1,8 +1,9 @@
-﻿using System;
+﻿using Abc.Aids;
+using Abc.Data.Common;
+using Microsoft.VisualStudio.TestPlatform.ObjectModel;
+using System;
 using System.Collections.Generic;
 using System.Text;
-
-using Abc.Aids;
 
 namespace Abc.Tests.Aids;
 
@@ -29,8 +30,16 @@ public sealed class GetRandomTests
         => Assert.AreNotEqual(GetRandom.Int64(min, max), GetRandom.Int64(min, max));
 
     [TestMethod]
-    public void UInt8Test()
-        => Assert.AreNotEqual(GetRandom.UInt8(0, (byte)max), GetRandom.UInt8(0, (byte)max));
+    public void UInt8Test() {
+        var x = GetRandom.UInt8(0, (byte)max);
+        var y = GetRandom.UInt8(0, (byte)max);
+        for (var i = 0; i < 10; i++)
+        {
+            if (x != y) break;
+            y = GetRandom.UInt8(0, (byte)max);
+        }
+        Assert.AreNotEqual(x, y);
+    }
 
     [TestMethod]
     public void UInt16Test()
@@ -77,8 +86,7 @@ public sealed class GetRandomTests
     }
 
     [TestMethod]
-    public void DateTimeTest()
-    {
+    public void DateTimeTest() {
         var minDate = DateTime.Now.AddYears(-100);
         var maxDate = DateTime.Now.AddYears(100);
         Assert.AreNotEqual(GetRandom.DateTime(minDate, maxDate), GetRandom.DateTime(minDate, maxDate));
@@ -96,4 +104,17 @@ public sealed class GetRandomTests
     public void GuidTest()
         => Assert.AreNotEqual(GetRandom.Guid(), GetRandom.Guid());
 
+    private class testClass : NamedEntity { }
+    [TestMethod]
+    public void ObjectTest()
+    {
+        var o1 = GetRandom.Object(typeof(testClass));
+        var o2 = GetRandom.Object(typeof(testClass));
+        foreach (var p in typeof(testClass).GetProperties())
+        {
+            if (p.PropertyType.IsArray) continue;
+            if (p.PropertyType == typeof(Guid)) continue;
+            Assert.AreNotEqual(p.GetValue(o1), p.GetValue(o2));
+        }
+    }
 }
