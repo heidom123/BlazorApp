@@ -348,3 +348,9 @@ C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\App\obj\Debug\net10.0-macca
 C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\App\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\Abc.Soft.App.pdb
 C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\App\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\App.genruntimeconfig.cache
 C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\App\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\ref\Abc.Soft.App.dll
+C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\App\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\Microsoft.Maui.Controls.HotReload.Forms.dll
+C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\App\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\Microsoft.VisualStudio.DesignTools.MobileTapContracts.dll
+C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\App\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\Microsoft.VisualStudio.DesignTools.TapContract.dll
+C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\App\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\Microsoft.VisualStudio.DesignTools.XamlTapContract.dll
+C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\App\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\f\MauiInfo.plist
+C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\App\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\f\OpenSans-Regular.ttf

@@ -3270,10 +3270,10 @@ C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\Todo\Client\obj\Debug\net10
 C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\Todo\Client\obj\Debug\net10.0\refint\Abc.Soft.Web.Client.dll
 C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\Todo\Client\obj\Debug\net10.0\Abc.Soft.Web.Client.pdb
 C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\Todo\Client\obj\Debug\net10.0\ref\Abc.Soft.Web.Client.dll
-C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\Todo\Client\bin\Debug\net10.0\wwwroot\_framework\Abc.Soft.Web.Client.dr8ptmxxf6.wasm
-C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\Todo\Client\bin\Debug\net10.0\wwwroot\_framework\Abc.Soft.Web.Client.7obofod5uv.pdb
-C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\Todo\Client\bin\Debug\net10.0\wwwroot\_framework\Abc.Soft.Web.Client.dr8ptmxxf6.wasm.gz
-C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\Todo\Client\bin\Debug\net10.0\wwwroot\_framework\Abc.Soft.Web.Client.7obofod5uv.pdb.gz
-C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\Todo\Client\obj\Debug\net10.0\compressed\zobyftkwxq-{0}-dr8ptmxxf6-dr8ptmxxf6.gz
-C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\Todo\Client\obj\Debug\net10.0\compressed\9x1rw4usig-{0}-7obofod5uv-7obofod5uv.gz
-C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\Todo\Client\obj\Debug\net10.0\compressed\ci2rkmt6e1-{0}-k7aygn1nva-k7aygn1nva.gz
+C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\Todo\Client\bin\Debug\net10.0\wwwroot\_framework\Abc.Soft.Web.Client.kz8b8d711l.wasm
+C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\Todo\Client\bin\Debug\net10.0\wwwroot\_framework\Abc.Soft.Web.Client.o4breocgcg.pdb
+C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\Todo\Client\bin\Debug\net10.0\wwwroot\_framework\Abc.Soft.Web.Client.kz8b8d711l.wasm.gz
+C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\Todo\Client\bin\Debug\net10.0\wwwroot\_framework\Abc.Soft.Web.Client.o4breocgcg.pdb.gz
+C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\Todo\Client\obj\Debug\net10.0\compressed\zobyftkwxq-{0}-kz8b8d711l-kz8b8d711l.gz
+C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\Todo\Client\obj\Debug\net10.0\compressed\9x1rw4usig-{0}-o4breocgcg-o4breocgcg.gz
+C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\Todo\Client\obj\Debug\net10.0\compressed\ci2rkmt6e1-{0}-6j9ga3zz8c-6j9ga3zz8c.gz
