@@ -18,7 +18,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Abc.Soft.App")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+93854360e0e612a3a62b8db80cea332cc69dc81b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+60a743492e5ad4e946f99a67a97c627f38ef28ea")]
 [assembly: System.Reflection.AssemblyProductAttribute("Abc.Soft.App")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Abc.Soft.App")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

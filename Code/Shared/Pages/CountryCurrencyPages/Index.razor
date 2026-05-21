@@ -1,0 +1,15 @@
+﻿@page "/countrycurrencies"
+@inject ICountryCurrenciesRepo repo
+@attribute [ExcludeFromInteractiveRouting]
+@inject NavigationManager NavigationManager
+
+<MyIndexPage TItem="CountryCurrency"
+             PageTitleText="CountryCurrencies"
+             EntityTitle="CountryCurrency"
+             Repo="repo"
+             BasePath="/countrycurrencies" >
+</MyIndexPage>
+
+@code {
+}
+

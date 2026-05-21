@@ -7,8 +7,7 @@ namespace Abc.Shared.Code;
 
 public static class MyGridAids
 {
-    public static bool Show(PropertyInfo p)
-    {
+    public static bool Show(PropertyInfo p) {
         if (p is null) return false;
         if (p.Name == nameof(NamedEntity.Id)) return false;
         var t = p.PropertyType;

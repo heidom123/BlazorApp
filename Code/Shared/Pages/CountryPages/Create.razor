@@ -1,0 +1,19 @@
+﻿@page "/countries/create"
+@inject ICountriesRepo repo
+@inject NavigationManager NavigationManager
+
+<MyCreatePage PageTitleText="Create a Country"
+              EntityTitle="Country"
+              Entity="country"
+              BasePath="/countries"
+              OnValidSubmit="addCountry" />
+
+@code {
+    [SupplyParameterFromForm(Name = nameof(Country))] private Country country { get; set; } = default!;
+    protected override void OnInitialized() => country ??= new();
+    private async Task addCountry()
+    {
+        await repo.CreateAsync(country);
+        NavigationManager.NavigateTo("/countries");
+    }
+}

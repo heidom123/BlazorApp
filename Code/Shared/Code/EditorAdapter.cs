@@ -1,12 +1,12 @@
-
+using System.Reflection;
 using Abc.Aids;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Forms;
 using System.Linq.Expressions;
-using System.Reflection;
 using System.Text.RegularExpressions;
+using Abc.Shared.Components;
 
-namespace Abc.Shared.Components;
+namespace Abc.Shared.Code;
 public interface IEditorAdapter {
     string DisplayName { get; }
     PropertyInfo PropInfo { get; }

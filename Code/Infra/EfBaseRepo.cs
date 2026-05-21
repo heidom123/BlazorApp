@@ -7,17 +7,14 @@ namespace Abc.Infra;
 
 public class EfBaseRepo<TContext, TEntity>(TContext c) : IRepo<TEntity>
     where TContext : DbContext
-    where TEntity : BaseEntity
-{
+    where TEntity : BaseEntity {
     protected readonly TContext db = c;
     private IQueryable<TEntity> set => db.Set<TEntity>();
-    public async Task<int> CountAsync(Query q)
-    {
+    public async Task<int> CountAsync(Query q) {
         var r = addSearch(set, q);
         return await r.CountAsync();
     }
-    public async Task<TEntity> CreateAsync(TEntity e)
-    {
+    public async Task<TEntity> CreateAsync(TEntity e) {
         await db.AddAsync(e);
         await db.SaveChangesAsync();
         return e;

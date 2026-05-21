@@ -2,25 +2,24 @@
 
   <PropertyGroup>
     <TargetFramework>net10.0</TargetFramework>
+	<ImplicitUsings>enable</ImplicitUsings>
     <Nullable>disable</Nullable>
-	  <AssemblyName>Abc.Shared</AssemblyName>
-	  <RootNamespace>Abc.Shared</RootNamespace>
-	  <PlatformTarget>AnyCPU</PlatformTarget>
-    <ImplicitUsings>enable</ImplicitUsings>
+	<AssemblyName>Abc.Shared</AssemblyName>
+	<RootNamespace>Abc.Shared</RootNamespace>
+	<PlatformTarget>AnyCPU</PlatformTarget>
+    
   </PropertyGroup>
 
+	<ItemGroup>
+		<ProjectReference Include="..\Jobs\Jobs.csproj" />
+	</ItemGroup>
 
   <ItemGroup>
     <SupportedPlatform Include="browser" />
-  </ItemGroup>
-
-  <ItemGroup>
+	  <PackageReference Include="MudBlazor" Version="9.4.0" />
     <PackageReference Include="Microsoft.AspNetCore.Components.QuickGrid" Version="10.0.5" />
-    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="10.*" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\Jobs\Jobs.csproj" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="10.*" />    
+	  <InternalsVisibleTo Include="Abc.Tests.Shared" />
   </ItemGroup>
 
 </Project>

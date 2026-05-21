@@ -1,16 +1,14 @@
 ﻿<div class="nav-item px-3">
-    @if (ChildContent is not null)
-    {
+    @if (ChildContent is not null) {
         <form action="@Href" method="post">
             @ChildContent
             <button type="submit" class="nav-link">
-                
             </button>
         </form>
     } else {
-    <NavLink class="nav-link" href="@Href" Match="@Match">
+        <NavLink class="nav-link" href="@Href" Match="@Match">
             @IconAndText
-    </NavLink>
+        </NavLink>
     }
 </div>
 
@@ -18,8 +16,8 @@
     [Parameter] public string Href { get; set; } = string.Empty;
     [Parameter] public string IconClass { get; set; } = string.Empty;
     [Parameter] public string Text { get; set; } = string.Empty;
-	[Parameter] public NavLinkMatch Match { get; set; } = NavLinkMatch.Prefix;
-	[Parameter] public RenderFragment? ChildContent { get; set; }
+    [Parameter] public NavLinkMatch Match { get; set; } = NavLinkMatch.Prefix;
+    [Parameter] public RenderFragment? ChildContent { get; set; }
 
-	private RenderFragment IconAndText => @<text><span class="bi @IconClass"></span> @Text </text>;
+    private RenderFragment IconAndText => @<text><span class="bi @IconClass"></span> @Text </text>;
 }

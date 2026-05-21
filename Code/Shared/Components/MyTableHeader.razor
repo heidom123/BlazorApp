@@ -23,8 +23,7 @@
     private string iconed => (Query?.SortBy == name) ? name + icon : name;
     private string searchStr => (Query?.SearchBy == name) ? Query.SearchStr : "";
     private bool isDisabled => PropertyInfo?.PropertyType != typeof(string);
-    private string headerHref()
-    {
+    private string headerHref() {
         var n = ((Query?.SortBy == name) && (Query?.SortDir == "desc")) ? null : name;
         var d = Query?.SortBy != name ? "asc" : "desc";
         var r = $"{BasePath}?Page=1&PageSize={Query?.PageSize ?? 7}";

@@ -5,8 +5,7 @@
     @if (isFirstPage) {
         <span>First</span>
         <span>Prev</span>
-    }
-    else {
+    } else {
         <a href="@firstHref">First</a>
         <a href="@prevHref">Prev</a>
     }
@@ -16,8 +15,7 @@
     @if (isLastPage) {
         <span>Next</span>
         <span>Last</span>
-    }
-    else {
+    } else {
         <a href="@nextHref">Next</a>
         <a href="@lastHref">Last</a>
     }
@@ -26,8 +24,7 @@
     @foreach (var s in Query.PageSizes) {
         if (s == pageSize) {
             <span>@s</span>
-        }
-        else {
+        } else {
             <a href="@sizeHref(s)">@s</a>
         }
     }

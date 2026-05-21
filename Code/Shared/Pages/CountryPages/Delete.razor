@@ -1,0 +1,27 @@
+﻿@page "/countries/delete"
+@inject ICountriesRepo repo
+@inject NavigationManager NavigationManager
+
+<MyDeletePage PageTitleText="Delete a Country"
+              EntityTitle="Country"
+              Entity="country"
+              BasePath="/countries"
+			  OnValidSubmit="DeleteCountry" >
+    <MyPropertyViewer Label="Id" Value="@country.Id.ToString()" />
+    <MyPropertyViewer Label="Name" Value="@country.Name" />
+    <MyPropertyViewer Label="Code" Value="@country.Code" />
+</MyDeletePage> 
+
+@code {
+    private Country country;
+    [SupplyParameterFromQuery] private Guid Id { get; set; }
+    protected override async Task OnInitializedAsync() {
+		country = await repo.GetAsync(Id);
+        if (country is null) NavigationManager.NotFound();
+    }
+
+    private async Task DeleteCountry() {
+		await repo.DeleteAsync(Id);
+        NavigationManager.NavigateTo("/movies");
+    }
+}

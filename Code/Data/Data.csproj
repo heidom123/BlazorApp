@@ -4,9 +4,9 @@
     <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>disable</Nullable>
-	  <AssemblyName>Abc.Data</AssemblyName>
-	  <RootNamespace>Abc.Data</RootNamespace>
-	  <PlatformTarget>AnyCPU</PlatformTarget>
+	<AssemblyName>Abc.Data</AssemblyName>
+	<RootNamespace>Abc.Data</RootNamespace>
+	<PlatformTarget>AnyCPU</PlatformTarget>
   </PropertyGroup>
 
   <ItemGroup>

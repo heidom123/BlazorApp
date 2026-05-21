@@ -12,12 +12,12 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName>ScopedCss</AssetTraitName>
       <AssetTraitValue>ApplicationBundle</AssetTraitValue>
-      <Fingerprint>p1cyugpm7g</Fingerprint>
-      <Integrity>fZ8smpiTx4xFB2ZJ8bIy2Y6G3S0z4lJlNjkHeVCBljk=</Integrity>
+      <Fingerprint>md8inz8fbl</Fingerprint>
+      <Integrity>FuLTc2ikTuySV/H74U0VnxnO+snZe9BFeMwprL2fPF0=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <FileLength>5439</FileLength>
-      <LastWriteTime>Tue, 19 May 2026 18:52:07 GMT</LastWriteTime>
+      <FileLength>5641</FileLength>
+      <LastWriteTime>Thu, 21 May 2026 12:43:31 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Abc.Soft.App.styles.css'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\app.css'))">

@@ -1,0 +1,18 @@
+@using MudBlazor
+
+<MudNavMenu Class="px-2" Rounded="true" Dense="true">
+    <MudNavLink Href="/" Match="NavLinkMatch.All" Icon="@MudBlazor.Icons.Material.Filled.Home">Home</MudNavLink>
+    <MudNavLink Href="/movies" Icon="@MudBlazor.Icons.Material.Filled.Movie">Movies</MudNavLink>
+    <MudNavLink Href="/countries" Icon="@MudBlazor.Icons.Material.Filled.Public">Countries</MudNavLink>
+    <MudNavLink Href="/currencies" Icon="@MudBlazor.Icons.Material.Filled.Payments">Currencies</MudNavLink>
+    <MudNavLink Href="/countryCurrencies" Icon="@MudBlazor.Icons.Material.Filled.Link">Currency Use</MudNavLink>
+    <MudNavLink Href="/money" Icon="@MudBlazor.Icons.Material.Filled.AttachMoney">Money</MudNavLink>
+    <MudNavLink Href="/counter" Icon="@MudBlazor.Icons.Material.Filled.ExposurePlus1">Counter</MudNavLink>
+    <MudNavLink Href="/weather" Icon="@MudBlazor.Icons.Material.Filled.Cloud">Weather</MudNavLink>
+    @AdditionalLinks
+</MudNavMenu>
+
+@code {
+    [Parameter]
+    public RenderFragment AdditionalLinks { get; set; }
+}

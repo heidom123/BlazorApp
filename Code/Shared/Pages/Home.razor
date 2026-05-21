@@ -1,0 +1,93 @@
+﻿@page "/"
+@using Abc.Aids
+@using System.Reflection
+
+
+<PageTitle>Home</PageTitle>
+
+<h1>Hello, world!</h1>
+
+<div>
+    <form>
+        <label for="genRandom"> Get your random values here:</label>
+        <select name="genRandom" id="genRandom" @onchange="getSelecedValue">
+            @foreach (var n in methodNames) {
+                <option value="@n">@n</option>
+            }
+        </select>
+    </form>
+    <div style="display:flex; flex-direction:column">
+        <div style="display:flex; flex-direction:row; text-align:center">
+        <p>Min</p> <input type="text" id="userParameterMin" name="userParameterMin" @bind="userParameterMin" />
+        <p>Max</p> <input type="text" id="userParameterMax" name="userParameterMax" @bind="userParameterMax" />
+        </div>
+        <button style="width:200px" class="btn btn-primary" @onclick="generateValue">Generate value</button>
+    </div>
+    <p>Hetkel on valitud: @selectedString</p>
+    <p>Random value: @genRandomValue</p>
+    
+</div>
+
+@code {
+    Type myType;
+    MethodInfo[] myArrayMethodInfo;
+    public List<string> methodNames;
+    private string genRandomValue, selectedString;
+    private string userParameterMin;
+    private string userParameterMax;
+
+    public static List<string> DisplayMethodInfo(MethodInfo[] myArrayMethodInfo)
+    {
+        List<string> methodNames = new List<string>();
+        // Display information for all methods.
+        for (int i = 0; i < myArrayMethodInfo.Length; i++)
+        {
+            MethodInfo myMethodInfo = (MethodInfo)myArrayMethodInfo[i];
+            methodNames.Add(myMethodInfo.Name.ToString());
+
+        }
+        return methodNames;
+    }
+
+    protected override void OnInitialized()
+    {
+        myType = typeof(GetRandom);
+        myArrayMethodInfo = myType.GetMethods();
+        methodNames = DisplayMethodInfo(myArrayMethodInfo);
+    }
+
+    private void getSelecedValue(ChangeEventArgs e)
+    {        
+        selectedString = e.Value.ToString();
+    }
+    
+    private void generateValue()
+    {
+        if (string.IsNullOrEmpty(selectedString)) selectedString = "Int32";
+        Type type = typeof(GetRandom);
+        MethodInfo mi = type.GetMethod(selectedString);      
+         //Tahaks teha nii, et võtab meetodi paramettrite tüübid ning konverdib sisestatud väärtused sellesse tüüpi
+         //ilma et peaks  if else jada tegema
+         ParameterInfo[] parameters = mi.GetParameters();
+        parameters = parameters;
+        if(parameters.Length != 0) {
+            foreach(var p in parameters) {
+				Type parameterType = p.ParameterType;               
+            }
+        }
+        if (selectedString.Contains("Int"))
+        {
+            Int32.TryParse(userParameterMin, out int min);
+            Int32.TryParse(userParameterMax, out int max);
+            genRandomValue = mi.Invoke(mi, new object[] { min, max }).ToString();
+        }
+        else if (selectedString.Contains("Double"))
+        {
+            Double.TryParse(userParameterMin, out double min);
+            Double.TryParse(userParameterMax, out double max);
+            genRandomValue = mi.Invoke(mi, new object[] { min, max }).ToString();
+        }
+        else genRandomValue = mi.Invoke(mi, null).ToString();
+
+    }
+}
