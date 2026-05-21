@@ -1,23 +1,23 @@
 ﻿@page "/countries/edit"
-@inject NavigationManager NavigationManager
 @inject ICountriesRepo repo
+@inject NavigationManager NavigationManager
 
-<MyEditPage PageTitleText="Edit"
-			EntityTitle="@country?.Name"
-			BasePath="/countries"
-			OnValidSubmit="updateCountry"
-			Entity="country"
-			EntityId="Id" />
+<MyEditPage PageTitleText="Edit Country"
+            EntityTitle="@country?.Name"
+            Entity="country"
+            BasePath="/countries"
+            EntityId="@Id"
+            OnValidSubmit="updateCountry" />
 
 @code {
     [SupplyParameterFromQuery] private Guid Id { get; set; }
-    [SupplyParameterFromForm] private Country country { get; set; }
-    protected override async Task OnInitializedAsync() {      
-		country ??= await repo.GetAsync(Id);
+    [SupplyParameterFromForm(Name = nameof(Country))] private Country country { get; set; }
+    protected override async Task OnInitializedAsync() {
+        country ??= await repo.GetAsync(Id);
         if (country is null) NavigationManager.NotFound();
     }
-    private async Task updateCountry() {        
-		await repo.UpdateAsync(country!);
+    private async Task updateCountry() {
+        await repo.UpdateAsync(country!);
         NavigationManager.NavigateTo("/countries");
-    } 
+    }
 }

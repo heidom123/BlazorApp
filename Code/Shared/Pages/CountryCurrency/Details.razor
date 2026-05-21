@@ -1,15 +1,15 @@
-﻿@page "/money/details"
-@inject IMoneysRepo repo
+﻿@page "/countrycurrencies/details"
+@inject ICountryCurrenciesRepo repo
 @inject NavigationManager NavigationManager
 
-<MyDetailsPage PageTitleText="Details Money"
-               EntityTitle="Money"
+<MyDetailsPage PageTitleText="Details Country Currency"
+               EntityTitle="Country Currency"
                Entity="item"
                EntityId="item?.Id"
-               BasePath="/money" />
+               BasePath="/countrycurrencies" />
 
 @code {
-    private Money item;
+    private CountryCurrency item;
     [SupplyParameterFromQuery] private Guid Id { get; set; }
     protected override async Task OnInitializedAsync() {
         item = await repo.GetAsync(Id);

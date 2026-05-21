@@ -1,18 +1,15 @@
-﻿@page "/moneys/create"
+﻿@page "/money/create"
 @inject IMoneysRepo repo
 @inject NavigationManager NavigationManager
 
-<MyCreatePage PageTitleText="Create a Money"
-              EntityTitle="Money"
-              Entity="money"
-              BasePath="/moneys"
-              OnValidSubmit="AddMoney" />
+<MyCreatePage Entity="money" EntityTitle="Money" BasePath="/money" OnValidSubmit="add" />
+
 
 @code {
     [SupplyParameterFromForm] private Money money { get; set; } = default!;
     protected override void OnInitialized() => money ??= new();
-    private async Task AddMoney() {
+    private async Task add() {
         await repo.CreateAsync(money);
-        NavigationManager.NavigateTo("/moneys");
+        NavigationManager.NavigateTo("/money");
     }
 }

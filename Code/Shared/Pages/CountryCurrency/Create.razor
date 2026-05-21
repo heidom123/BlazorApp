@@ -10,8 +10,7 @@
 @code {
     [SupplyParameterFromForm(Name = nameof(CountryCurrency))] private CountryCurrency item { get; set; } = default!;
     protected override void OnInitialized() => item ??= new();
-    private async Task add()
-    {
+    private async Task add() {
         await repo.CreateAsync(item);
         NavigationManager.NavigateTo("/countrycurrencies");
     }

@@ -1,18 +1,18 @@
 ﻿@page "/countries/details"
-@inject NavigationManager NavigationManager
 @inject ICountriesRepo repo
+@inject NavigationManager NavigationManager
 
-<MyDetailsPage PageTitleText="Country Details"
-               EntityTitle="@country?.Name"
-               BasePath="/countries"
+<MyDetailsPage PageTitleText="Details Country"
+               EntityTitle="Country"
                Entity="country"
-               EntityId="Id" />
+               EntityId="country?.Id"
+               BasePath="/countries" />
 
 @code {
     private Country country;
     [SupplyParameterFromQuery] private Guid Id { get; set; }
     protected override async Task OnInitializedAsync() {
-		country = await repo.GetAsync(Id);
+        country = await repo.GetAsync(Id);
         if (country is null) NavigationManager.NotFound();
     }
 }

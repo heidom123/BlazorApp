@@ -2,11 +2,7 @@
 @inject IMoviesRepo repo
 @inject NavigationManager NavigationManager
 
-<MyDeletePage PageTitleText="Delete a Movie"
-              EntityTitle="Movie"
-              Entity="movie"
-              BasePath="/movies"
-			  OnValidSubmit="DeleteMovie" />
+<MyDeletePage PageTitleText="Delete Movie" EntityTitle="Movie" Entity="movie" BasePath="/movies" OnValidSubmit="deleteMovie" />
 
 @code {
     private Movie movie;
@@ -15,12 +11,8 @@
         movie = await repo.GetAsync(Id);
         if (movie is null) NavigationManager.NotFound();
     }
-
-    private async Task DeleteMovie()
-    {
-        await repo.DeleteAsync(Id);
+    private async Task deleteMovie() {
+        await repo.DeleteAsync(movie!.Id);
         NavigationManager.NavigateTo("/movies");
     }
-
-
 }

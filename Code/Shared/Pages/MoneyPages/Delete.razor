@@ -1,23 +1,18 @@
-﻿@page "/moneys/delete"
+﻿@page "/money/delete"
 @inject IMoneysRepo repo
 @inject NavigationManager NavigationManager
 
-<MyDeletePage PageTitleText="Delete a Money"
-              EntityTitle="Money"
-              Entity="money"
-              BasePath="/moneys"
-              OnValidSubmit="DeleteMoney" />
+<MyDeletePage PageTitleText="Delete Money" EntityTitle="Money" Entity="item" BasePath="/money" OnValidSubmit="delete" />
 
 @code {
-    private Money money;
+    private Money item;
     [SupplyParameterFromQuery] private Guid Id { get; set; }
     protected override async Task OnInitializedAsync() {
-        money = await repo.GetAsync(Id);
-        if (money is null) NavigationManager.NotFound();
+        item = await repo.GetAsync(Id);
+        if (item is null) NavigationManager.NotFound();
     }
-
-    private async Task DeleteMoney() {
-        await repo.DeleteAsync(Id);
-        NavigationManager.NavigateTo("/moneys");
+    private async Task delete() {
+        await repo.DeleteAsync(item!.Id);
+        NavigationManager.NavigateTo("/money");
     }
 }

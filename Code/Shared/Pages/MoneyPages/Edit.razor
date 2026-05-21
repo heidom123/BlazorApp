@@ -1,23 +1,23 @@
-﻿@page "/moneys/edit"
-@inject NavigationManager NavigationManager
+﻿@page "/money/edit"
 @inject IMoneysRepo repo
+@inject NavigationManager NavigationManager
 
-<MyEditPage PageTitleText="Edit"
-            EntityTitle="@($"{money?.Amount}")"
-            BasePath="/moneys"
-            OnValidSubmit="updateMoney"
+<MyEditPage PageTitleText="Edit Money"
+            EntityTitle="Money"
             Entity="money"
-            EntityId="Id" />
+            BasePath="/money"
+            EntityId="@Id"
+            OnValidSubmit="update" />
 
 @code {
     [SupplyParameterFromQuery] private Guid Id { get; set; }
     [SupplyParameterFromForm] private Money money { get; set; }
-    protected override async Task OnInitializedAsync() {      
+    protected override async Task OnInitializedAsync() {
         money ??= await repo.GetAsync(Id);
         if (money is null) NavigationManager.NotFound();
     }
-    private async Task updateMoney() {        
+    private async Task update() {
         await repo.UpdateAsync(money!);
-        NavigationManager.NavigateTo("/moneys");
-    } 
+        NavigationManager.NavigateTo("/money");
+    }
 }
