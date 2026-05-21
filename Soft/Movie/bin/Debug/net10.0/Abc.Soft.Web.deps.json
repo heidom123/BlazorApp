@@ -8,14 +8,13 @@
     ".NETCoreApp,Version=v10.0": {
       "Abc.Soft.Web/1.0.0": {
         "dependencies": {
-          "Abc.Data": "1.0.0",
-          "Abc.Infra": "1.0.0",
           "Abc.Shared": "1.0.0",
           "Microsoft.AspNetCore.Components.QuickGrid.EntityFrameworkAdapter": "10.0.8",
           "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "10.0.8",
           "Microsoft.EntityFrameworkCore.SqlServer": "10.0.8",
           "Microsoft.EntityFrameworkCore.Sqlite": "10.0.8",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "10.0.2",
+          "MudBlazor": "9.4.0",
           "NuGet.Packaging": "7.3.1",
           "NuGet.Protocol": "7.3.1",
           "Abc.Aids.Reference": "1.0.0.0",
@@ -626,14 +625,14 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Identity.EntityFrameworkCore/10.0.7": {
+      "Microsoft.AspNetCore.Identity.EntityFrameworkCore/10.0.8": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Relational": "10.0.8"
         },
         "runtime": {
           "lib/net10.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll": {
-            "assemblyVersion": "10.0.7.0",
-            "fileVersion": "10.0.726.21808"
+            "assemblyVersion": "10.0.8.0",
+            "fileVersion": "10.0.826.23019"
           }
         }
       },
@@ -1702,6 +1701,14 @@
           }
         }
       },
+      "MudBlazor/9.4.0": {
+        "runtime": {
+          "lib/net10.0/MudBlazor.dll": {
+            "assemblyVersion": "9.4.0.0",
+            "fileVersion": "9.4.0.0"
+          }
+        }
+      },
       "Newtonsoft.Json/13.0.3": {
         "runtime": {
           "lib/net6.0/Newtonsoft.Json.dll": {
@@ -2115,7 +2122,7 @@
       "Abc.Infra/1.0.0": {
         "dependencies": {
           "Abc.Domain": "1.0.0",
-          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "10.0.7",
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "10.0.8",
           "Microsoft.EntityFrameworkCore.Design": "10.0.8",
           "Microsoft.EntityFrameworkCore.Sqlite": "10.0.8"
         },
@@ -2138,7 +2145,8 @@
       "Abc.Shared/1.0.0": {
         "dependencies": {
           "Abc.Jobs": "1.0.0",
-          "Microsoft.AspNetCore.Components.QuickGrid": "10.0.8"
+          "Microsoft.AspNetCore.Components.QuickGrid": "10.0.8",
+          "MudBlazor": "9.4.0"
         },
         "runtime": {
           "Abc.Shared.dll": {
@@ -2587,12 +2595,12 @@
       "path": "microsoft.aspnetcore.diagnostics.entityframeworkcore/10.0.8",
       "hashPath": "microsoft.aspnetcore.diagnostics.entityframeworkcore.10.0.8.nupkg.sha512"
     },
-    "Microsoft.AspNetCore.Identity.EntityFrameworkCore/10.0.7": {
+    "Microsoft.AspNetCore.Identity.EntityFrameworkCore/10.0.8": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-WAMNMV7m019wBaem9YAyK+nsR6r5ixBL/kOPybO9QhEkwG4dOeVG3vvTTkI5I6q6fp5+MN6IuYxxV/2HYiI9vw==",
-      "path": "microsoft.aspnetcore.identity.entityframeworkcore/10.0.7",
-      "hashPath": "microsoft.aspnetcore.identity.entityframeworkcore.10.0.7.nupkg.sha512"
+      "sha512": "sha512-GvUGVaFpAihzb0MEUVunhwFNVI/s9wCtOidbaz4JucM3W/YiMtccki9Gm+qcoxlPxQyGpAxX11bvEghL87TMGA==",
+      "path": "microsoft.aspnetcore.identity.entityframeworkcore/10.0.8",
+      "hashPath": "microsoft.aspnetcore.identity.entityframeworkcore.10.0.8.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Razor.Language/6.0.24": {
       "type": "package",
@@ -2922,6 +2930,13 @@
       "sha512": "sha512-YqueG52R/Xej4VVbKuRIodjiAhV0HR/XVbLbNrJhCZnzjnSjgMJ/dCdV0akQQxavX6hp/LC6rqLGLcXeQYU7XA==",
       "path": "mono.texttemplating/3.0.0",
       "hashPath": "mono.texttemplating.3.0.0.nupkg.sha512"
+    },
+    "MudBlazor/9.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-p6BF8zmt4c/yi/hD9hP7yPioUK5loOnif19gwIEANq6I46407QnSu0HTW1NuALC5seRKcWb2pBP5LwC8aBE2Mg==",
+      "path": "mudblazor/9.4.0",
+      "hashPath": "mudblazor.9.4.0.nupkg.sha512"
     },
     "Newtonsoft.Json/13.0.3": {
       "type": "package",

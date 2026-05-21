@@ -1,24 +1,24 @@
 ﻿<Project>
   <ItemGroup>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Abc.Shared.8ew27lxkfr.bundle.scp.css'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Abc.Shared.qeb7u56qc5.bundle.scp.css'))">
       <SourceType>Package</SourceType>
       <SourceId>Abc.Shared</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/Abc.Shared</BasePath>
-      <RelativePath>Abc.Shared.8ew27lxkfr.bundle.scp.css</RelativePath>
+      <RelativePath>Abc.Shared.qeb7u56qc5.bundle.scp.css</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>Reference</AssetMode>
       <AssetRole>Primary</AssetRole>
       <RelatedAsset></RelatedAsset>
       <AssetTraitName>ScopedCss</AssetTraitName>
       <AssetTraitValue>ProjectBundle</AssetTraitValue>
-      <Fingerprint>8ew27lxkfr</Fingerprint>
-      <Integrity>gPvtmfIWcKZWwY1BKapzfJkrH6K5+ZnED7e8cZdG4+M=</Integrity>
+      <Fingerprint>qeb7u56qc5</Fingerprint>
+      <Integrity>ftgnWEvDisDNTuR6GCS8pyMF/g3FmMQG5Bl4vLGMAlc=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <FileLength>13388</FileLength>
-      <LastWriteTime>Thu, 21 May 2026 12:43:28 GMT</LastWriteTime>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Abc.Shared.8ew27lxkfr.bundle.scp.css'))</OriginalItemSpec>
+      <FileLength>13383</FileLength>
+      <LastWriteTime>Thu, 21 May 2026 18:00:17 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Abc.Shared.qeb7u56qc5.bundle.scp.css'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\background.png'))">
       <SourceType>Package</SourceType>

@@ -1,1 +1,627 @@
-[]
+[
+  {
+    "ContainingType": "Abc.Soft.Web.CrudApi\u002B\u003C\u003Ec__0\u00602[[Abc.Data.Country, Abc.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Abc.Infra.ICountriesRepo, Abc.Infra, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "\u003CMapCrudApi\u003Eb__0_0",
+    "RelativePath": "api/countries/",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Abc.Soft.Web.CrudApi\u002B\u003C\u003Ec__0\u00602[[Abc.Data.Country, Abc.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Abc.Infra.ICountriesRepo, Abc.Infra, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "\u003CMapCrudApi\u003Eb__0_3",
+    "RelativePath": "api/countries/",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "e",
+        "Type": "Abc.Data.Country",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Abc.Soft.Web.CrudApi\u002B\u003C\u003Ec__0\u00602[[Abc.Data.Country, Abc.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Abc.Infra.ICountriesRepo, Abc.Infra, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "\u003CMapCrudApi\u003Eb__0_2",
+    "RelativePath": "api/countries/{id:guid}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Abc.Soft.Web.CrudApi\u002B\u003C\u003Ec__0\u00602[[Abc.Data.Country, Abc.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Abc.Infra.ICountriesRepo, Abc.Infra, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "\u003CMapCrudApi\u003Eb__0_4",
+    "RelativePath": "api/countries/{id:guid}",
+    "HttpMethod": "PUT",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "e",
+        "Type": "Abc.Data.Country",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Abc.Soft.Web.CrudApi\u002B\u003C\u003Ec__0\u00602[[Abc.Data.Country, Abc.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Abc.Infra.ICountriesRepo, Abc.Infra, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "\u003CMapCrudApi\u003Eb__0_5",
+    "RelativePath": "api/countries/{id:guid}",
+    "HttpMethod": "DELETE",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Abc.Soft.Web.CrudApi\u002B\u003C\u003Ec__0\u00602[[Abc.Data.Country, Abc.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Abc.Infra.ICountriesRepo, Abc.Infra, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "\u003CMapCrudApi\u003Eb__0_1",
+    "RelativePath": "api/countries/count",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Abc.Soft.Web.CrudApi\u002B\u003C\u003Ec__0\u00602[[Abc.Data.CountryCurrency, Abc.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Abc.Infra.ICountryCurrenciesRepo, Abc.Infra, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "\u003CMapCrudApi\u003Eb__0_0",
+    "RelativePath": "api/countrycurrencies/",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Abc.Soft.Web.CrudApi\u002B\u003C\u003Ec__0\u00602[[Abc.Data.CountryCurrency, Abc.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Abc.Infra.ICountryCurrenciesRepo, Abc.Infra, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "\u003CMapCrudApi\u003Eb__0_3",
+    "RelativePath": "api/countrycurrencies/",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "e",
+        "Type": "Abc.Data.CountryCurrency",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Abc.Soft.Web.CrudApi\u002B\u003C\u003Ec__0\u00602[[Abc.Data.CountryCurrency, Abc.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Abc.Infra.ICountryCurrenciesRepo, Abc.Infra, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "\u003CMapCrudApi\u003Eb__0_2",
+    "RelativePath": "api/countrycurrencies/{id:guid}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Abc.Soft.Web.CrudApi\u002B\u003C\u003Ec__0\u00602[[Abc.Data.CountryCurrency, Abc.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Abc.Infra.ICountryCurrenciesRepo, Abc.Infra, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "\u003CMapCrudApi\u003Eb__0_4",
+    "RelativePath": "api/countrycurrencies/{id:guid}",
+    "HttpMethod": "PUT",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "e",
+        "Type": "Abc.Data.CountryCurrency",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Abc.Soft.Web.CrudApi\u002B\u003C\u003Ec__0\u00602[[Abc.Data.CountryCurrency, Abc.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Abc.Infra.ICountryCurrenciesRepo, Abc.Infra, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "\u003CMapCrudApi\u003Eb__0_5",
+    "RelativePath": "api/countrycurrencies/{id:guid}",
+    "HttpMethod": "DELETE",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Abc.Soft.Web.CrudApi\u002B\u003C\u003Ec__0\u00602[[Abc.Data.CountryCurrency, Abc.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Abc.Infra.ICountryCurrenciesRepo, Abc.Infra, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "\u003CMapCrudApi\u003Eb__0_1",
+    "RelativePath": "api/countrycurrencies/count",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Abc.Soft.Web.CrudApi\u002B\u003C\u003Ec__0\u00602[[Abc.Data.Currency, Abc.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Abc.Infra.ICurrenciesRepo, Abc.Infra, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "\u003CMapCrudApi\u003Eb__0_0",
+    "RelativePath": "api/currencies/",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Abc.Soft.Web.CrudApi\u002B\u003C\u003Ec__0\u00602[[Abc.Data.Currency, Abc.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Abc.Infra.ICurrenciesRepo, Abc.Infra, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "\u003CMapCrudApi\u003Eb__0_3",
+    "RelativePath": "api/currencies/",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "e",
+        "Type": "Abc.Data.Currency",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Abc.Soft.Web.CrudApi\u002B\u003C\u003Ec__0\u00602[[Abc.Data.Currency, Abc.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Abc.Infra.ICurrenciesRepo, Abc.Infra, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "\u003CMapCrudApi\u003Eb__0_2",
+    "RelativePath": "api/currencies/{id:guid}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Abc.Soft.Web.CrudApi\u002B\u003C\u003Ec__0\u00602[[Abc.Data.Currency, Abc.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Abc.Infra.ICurrenciesRepo, Abc.Infra, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "\u003CMapCrudApi\u003Eb__0_4",
+    "RelativePath": "api/currencies/{id:guid}",
+    "HttpMethod": "PUT",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "e",
+        "Type": "Abc.Data.Currency",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Abc.Soft.Web.CrudApi\u002B\u003C\u003Ec__0\u00602[[Abc.Data.Currency, Abc.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Abc.Infra.ICurrenciesRepo, Abc.Infra, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "\u003CMapCrudApi\u003Eb__0_5",
+    "RelativePath": "api/currencies/{id:guid}",
+    "HttpMethod": "DELETE",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Abc.Soft.Web.CrudApi\u002B\u003C\u003Ec__0\u00602[[Abc.Data.Currency, Abc.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Abc.Infra.ICurrenciesRepo, Abc.Infra, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "\u003CMapCrudApi\u003Eb__0_1",
+    "RelativePath": "api/currencies/count",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Abc.Soft.Web.CrudApi\u002B\u003C\u003Ec__0\u00602[[Abc.Data.Money, Abc.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Abc.Infra.IMoneysRepo, Abc.Infra, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "\u003CMapCrudApi\u003Eb__0_0",
+    "RelativePath": "api/money/",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Abc.Soft.Web.CrudApi\u002B\u003C\u003Ec__0\u00602[[Abc.Data.Money, Abc.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Abc.Infra.IMoneysRepo, Abc.Infra, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "\u003CMapCrudApi\u003Eb__0_3",
+    "RelativePath": "api/money/",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "e",
+        "Type": "Abc.Data.Money",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Abc.Soft.Web.CrudApi\u002B\u003C\u003Ec__0\u00602[[Abc.Data.Money, Abc.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Abc.Infra.IMoneysRepo, Abc.Infra, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "\u003CMapCrudApi\u003Eb__0_2",
+    "RelativePath": "api/money/{id:guid}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Abc.Soft.Web.CrudApi\u002B\u003C\u003Ec__0\u00602[[Abc.Data.Money, Abc.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Abc.Infra.IMoneysRepo, Abc.Infra, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "\u003CMapCrudApi\u003Eb__0_4",
+    "RelativePath": "api/money/{id:guid}",
+    "HttpMethod": "PUT",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "e",
+        "Type": "Abc.Data.Money",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Abc.Soft.Web.CrudApi\u002B\u003C\u003Ec__0\u00602[[Abc.Data.Money, Abc.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Abc.Infra.IMoneysRepo, Abc.Infra, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "\u003CMapCrudApi\u003Eb__0_5",
+    "RelativePath": "api/money/{id:guid}",
+    "HttpMethod": "DELETE",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Abc.Soft.Web.CrudApi\u002B\u003C\u003Ec__0\u00602[[Abc.Data.Money, Abc.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Abc.Infra.IMoneysRepo, Abc.Infra, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "\u003CMapCrudApi\u003Eb__0_1",
+    "RelativePath": "api/money/count",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Abc.Soft.Web.CrudApi\u002B\u003C\u003Ec__0\u00602[[Abc.Data.Movie, Abc.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Abc.Infra.IMoviesRepo, Abc.Infra, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "\u003CMapCrudApi\u003Eb__0_0",
+    "RelativePath": "api/movies/",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Abc.Soft.Web.CrudApi\u002B\u003C\u003Ec__0\u00602[[Abc.Data.Movie, Abc.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Abc.Infra.IMoviesRepo, Abc.Infra, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "\u003CMapCrudApi\u003Eb__0_3",
+    "RelativePath": "api/movies/",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "e",
+        "Type": "Abc.Data.Movie",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Abc.Soft.Web.CrudApi\u002B\u003C\u003Ec__0\u00602[[Abc.Data.Movie, Abc.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Abc.Infra.IMoviesRepo, Abc.Infra, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "\u003CMapCrudApi\u003Eb__0_2",
+    "RelativePath": "api/movies/{id:guid}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Abc.Soft.Web.CrudApi\u002B\u003C\u003Ec__0\u00602[[Abc.Data.Movie, Abc.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Abc.Infra.IMoviesRepo, Abc.Infra, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "\u003CMapCrudApi\u003Eb__0_4",
+    "RelativePath": "api/movies/{id:guid}",
+    "HttpMethod": "PUT",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "e",
+        "Type": "Abc.Data.Movie",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Abc.Soft.Web.CrudApi\u002B\u003C\u003Ec__0\u00602[[Abc.Data.Movie, Abc.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Abc.Infra.IMoviesRepo, Abc.Infra, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "\u003CMapCrudApi\u003Eb__0_5",
+    "RelativePath": "api/movies/{id:guid}",
+    "HttpMethod": "DELETE",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Abc.Soft.Web.CrudApi\u002B\u003C\u003Ec__0\u00602[[Abc.Data.Movie, Abc.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Abc.Infra.IMoviesRepo, Abc.Infra, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "\u003CMapCrudApi\u003Eb__0_1",
+    "RelativePath": "api/movies/count",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

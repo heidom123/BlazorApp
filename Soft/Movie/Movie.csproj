@@ -12,6 +12,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+	  <PackageReference Include="MudBlazor" Version="9.4.0" />
     <PackageReference Include="Microsoft.AspNetCore.Components.QuickGrid.EntityFrameworkAdapter" Version="10.*" />
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="10.*" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="10.*" />
@@ -25,14 +26,13 @@
     <PackageReference Include="NuGet.Protocol" Version="7.3.1" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\..\Code\Data\Data.csproj" />
-    <ProjectReference Include="..\..\Code\Shared\Shared.csproj" />
-    <ProjectReference Include="..\..\Code\Infra\Infra.csproj" />
-  </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Data\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Code\Shared\Shared.csproj" />
   </ItemGroup>
 
 </Project>

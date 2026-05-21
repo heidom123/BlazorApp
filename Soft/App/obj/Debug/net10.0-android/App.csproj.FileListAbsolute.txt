@@ -2110,9 +2110,9 @@ C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\App\obj\Debug\net10.0-andro
 C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\App\obj\Debug\net10.0-android\assets\wwwroot\_content\Microsoft.AspNetCore.Components.QuickGrid\Microsoft.AspNetCore.Components.QuickGrid.boiwgh0w5b.bundle.scp.css
 C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\App\obj\Debug\net10.0-android\assets\wwwroot\_content\Microsoft.AspNetCore.Components.QuickGrid\QuickGrid.razor.js
 C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\App\obj\Debug\net10.0-android\assets\wwwroot\_content\Abc.Shared\exampleJsInterop.js.gz
-C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\App\obj\Debug\net10.0-android\assets\wwwroot\_content\Abc.Shared\Abc.Shared.8ew27lxkfr.bundle.scp.css.gz
 C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\App\obj\Debug\net10.0-android\assets\wwwroot\_content\Abc.Shared\exampleJsInterop.js.br
-C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\App\obj\Debug\net10.0-android\assets\wwwroot\_content\Abc.Shared\Abc.Shared.8ew27lxkfr.bundle.scp.css.br
-C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\App\obj\Debug\net10.0-android\assets\wwwroot\_content\Abc.Shared\Abc.Shared.8ew27lxkfr.bundle.scp.css
 C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\App\obj\Debug\net10.0-android\assets\wwwroot\_content\Abc.Shared\background.png
 C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\App\obj\Debug\net10.0-android\assets\wwwroot\_content\Abc.Shared\exampleJsInterop.js
+C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\App\obj\Debug\net10.0-android\assets\wwwroot\_content\Abc.Shared\Abc.Shared.qeb7u56qc5.bundle.scp.css.gz
+C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\App\obj\Debug\net10.0-android\assets\wwwroot\_content\Abc.Shared\Abc.Shared.qeb7u56qc5.bundle.scp.css.br
+C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\App\obj\Debug\net10.0-android\assets\wwwroot\_content\Abc.Shared\Abc.Shared.qeb7u56qc5.bundle.scp.css

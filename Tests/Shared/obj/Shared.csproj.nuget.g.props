@@ -14,6 +14,7 @@
     <SourceRoot Include="C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages\" />
   </ItemGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)mudblazor\9.4.0\buildTransitive\MudBlazor.props" Condition="Exists('$(NuGetPackageRoot)mudblazor\9.4.0\buildTransitive\MudBlazor.props')" />
     <Import Project="$(NuGetPackageRoot)mstest.analyzers\4.0.1\buildTransitive\MSTest.Analyzers.props" Condition="Exists('$(NuGetPackageRoot)mstest.analyzers\4.0.1\buildTransitive\MSTest.Analyzers.props')" />
     <Import Project="$(NuGetPackageRoot)microsoft.testing.platform\2.0.1\buildTransitive\net9.0\Microsoft.Testing.Platform.props" Condition="Exists('$(NuGetPackageRoot)microsoft.testing.platform\2.0.1\buildTransitive\net9.0\Microsoft.Testing.Platform.props')" />
     <Import Project="$(NuGetPackageRoot)microsoft.testing.platform.msbuild\2.0.1\buildTransitive\Microsoft.Testing.Platform.MSBuild.props" Condition="Exists('$(NuGetPackageRoot)microsoft.testing.platform.msbuild\2.0.1\buildTransitive\Microsoft.Testing.Platform.MSBuild.props')" />
@@ -32,5 +33,6 @@
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <PkgMSTest_Analyzers Condition=" '$(PkgMSTest_Analyzers)' == '' ">C:\Users\heido\.nuget\packages\mstest.analyzers\4.0.1</PkgMSTest_Analyzers>
     <PkgMicrosoft_CodeAnalysis_Analyzers Condition=" '$(PkgMicrosoft_CodeAnalysis_Analyzers)' == '' ">C:\Users\heido\.nuget\packages\microsoft.codeanalysis.analyzers\3.11.0</PkgMicrosoft_CodeAnalysis_Analyzers>
+    <PkgMicrosoft_EntityFrameworkCore_Tools Condition=" '$(PkgMicrosoft_EntityFrameworkCore_Tools)' == '' ">C:\Users\heido\.nuget\packages\microsoft.entityframeworkcore.tools\10.0.8</PkgMicrosoft_EntityFrameworkCore_Tools>
   </PropertyGroup>
 </Project>

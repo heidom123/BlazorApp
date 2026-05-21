@@ -17,17 +17,13 @@ public sealed class CurrencyConfig : IEntityTypeConfiguration<Currency> {
 public sealed class MovieConfig : IEntityTypeConfiguration<Movie> {
     public void Configure(EntityTypeBuilder<Movie> b) { }
 }
-public sealed class MoneyConfig : IEntityTypeConfiguration<Money>
-{
-    public void Configure(EntityTypeBuilder<Money> b)
-    {
+public sealed class MoneyConfig : IEntityTypeConfiguration<Money> {
+    public void Configure(EntityTypeBuilder<Money> b) {
         b.Property(x => x.Amount).HasColumnType("decimal(18, 2)");
     }
 }
-public sealed class CountryCurrencyConfig : IEntityTypeConfiguration<CountryCurrency>
-{
-    public void Configure(EntityTypeBuilder<CountryCurrency> b)
-    {
+public sealed class CountryCurrencyConfig : IEntityTypeConfiguration<CountryCurrency> {
+    public void Configure(EntityTypeBuilder<CountryCurrency> b) {
         b.HasOne(x => x.Country)
             .WithMany(x => x.CountryCurrencies)
             .HasForeignKey(x => x.CountryId);

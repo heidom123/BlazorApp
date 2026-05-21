@@ -76,7 +76,6 @@ C:\Users\heido\source\repos\heidom123\BlazorApp\Code\Shared\obj\Debug\net10.0\rj
 C:\Users\heido\source\repos\heidom123\BlazorApp\Code\Shared\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
 C:\Users\heido\source\repos\heidom123\BlazorApp\Code\Shared\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
 C:\Users\heido\source\repos\heidom123\BlazorApp\Code\Shared\obj\Debug\net10.0\scopedcss\Components\MyNavLink.razor.rz.scp.css
-C:\Users\heido\source\repos\heidom123\BlazorApp\Code\Shared\obj\Debug\net10.0\scopedcss\Pages\CountryCurrencyPages\Index.razor.rz.scp.css
 C:\Users\heido\source\repos\heidom123\BlazorApp\Code\Shared\obj\Debug\net10.0\scopedcss\Pages\CountryPages\Index.razor.rz.scp.css
 C:\Users\heido\source\repos\heidom123\BlazorApp\Code\Shared\obj\Debug\net10.0\scopedcss\Pages\CurrencyPages\Index.razor.rz.scp.css
 C:\Users\heido\source\repos\heidom123\BlazorApp\Code\Shared\obj\Debug\net10.0\scopedcss\Pages\MoneyPages\Index.razor.rz.scp.css
@@ -102,5 +101,6 @@ C:\Users\heido\source\repos\heidom123\BlazorApp\Code\Shared\obj\Debug\net10.0\re
 C:\Users\heido\source\repos\heidom123\BlazorApp\Code\Shared\obj\Debug\net10.0\Abc.Shared.pdb
 C:\Users\heido\source\repos\heidom123\BlazorApp\Code\Shared\obj\Debug\net10.0\ref\Abc.Shared.dll
 C:\Users\heido\source\repos\heidom123\BlazorApp\Code\Shared\obj\Debug\net10.0\scopedcss\Components\NavMenu.razor.rz.scp.css
-C:\Users\heido\source\repos\heidom123\BlazorApp\Code\Shared\obj\Debug\net10.0\compressed\kmdzzlrzqm-{0}-u77plwg8p7-u77plwg8p7.gz
-C:\Users\heido\source\repos\heidom123\BlazorApp\Code\Shared\obj\Debug\net10.0\compressed\kk8z6b8yqy-{0}-8ew27lxkfr-8ew27lxkfr.gz
+C:\Users\heido\source\repos\heidom123\BlazorApp\Code\Shared\obj\Debug\net10.0\scopedcss\Pages\CountryCurrency\Index.razor.rz.scp.css
+C:\Users\heido\source\repos\heidom123\BlazorApp\Code\Shared\obj\Debug\net10.0\compressed\kmdzzlrzqm-{0}-672yrjeo4g-672yrjeo4g.gz
+C:\Users\heido\source\repos\heidom123\BlazorApp\Code\Shared\obj\Debug\net10.0\compressed\kk8z6b8yqy-{0}-qeb7u56qc5-qeb7u56qc5.gz

@@ -1,8 +1,12 @@
-﻿using Abc.Soft.Web.Components;
-using Abc.Infra;
-using System.IO;
+﻿using Abc.Infra;
+using Abc.Soft.Web;
+using Abc.Soft.Web.Components;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
+using MudBlazor.Services;
+using System.IO;
+using System.Text.Json.Serialization;
+// using Microsoft.AspNetCore.Components.WebAssembly.Hosting; // removed - this is a server project
 
 var builder = WebApplication.CreateBuilder(args);
 var dbFile = Path.Combine(builder.Environment.ContentRootPath, "Data", "app.db");
@@ -10,7 +14,13 @@ builder.Services.AddDbContextFactory<ApplicationDbContext>(options =>
     options.UseSqlite($"Data Source={dbFile}"));
 builder.Services.AddQuickGridEntityFrameworkAdapter();
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
+builder.Services.AddQuickGridEntityFrameworkAdapter();
+builder.Services.ConfigureHttpJsonOptions(o =>
+    o.SerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
 
+builder.Services.AddMudServices();
+// Server-side app: components should use server repos (registered below) that work
+// directly with ApplicationDbContext. Remove client-side HTTP repo usage.
 // Add services to the container.
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
@@ -43,6 +53,12 @@ app.UseAntiforgery();
 
 app.MapStaticAssets();
 app.MapRazorComponents<App>()
-    .AddInteractiveServerRenderMode();
+    .AddAdditionalAssemblies(typeof(Abc.Shared.Pages.Home).Assembly);
+
+app.MapCountriesApi();
+app.MapMoviesApi();
+app.MapCurrenciesApi();
+app.MapMoneyApi();
+app.MapCountryCurrenciesApi();
 
 app.Run();

@@ -81,20 +81,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/heido/source/repos/heidom123/BlazorApp/Code/Shared/Pages/CountryCurrencyPages/Create.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRyeUN1cnJlbmN5UGFnZXNcQ3JlYXRlLnJhem9y
+[C:/Users/heido/source/repos/heidom123/BlazorApp/Code/Shared/Pages/CountryCurrency/Create.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRyeUN1cnJlbmN5XENyZWF0ZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/heido/source/repos/heidom123/BlazorApp/Code/Shared/Pages/CountryCurrencyPages/Delete.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRyeUN1cnJlbmN5UGFnZXNcRGVsZXRlLnJhem9y
+[C:/Users/heido/source/repos/heidom123/BlazorApp/Code/Shared/Pages/CountryCurrency/Delete.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRyeUN1cnJlbmN5XERlbGV0ZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/heido/source/repos/heidom123/BlazorApp/Code/Shared/Pages/CountryCurrencyPages/Details.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRyeUN1cnJlbmN5UGFnZXNcRGV0YWlscy5yYXpvcg==
+[C:/Users/heido/source/repos/heidom123/BlazorApp/Code/Shared/Pages/CountryCurrency/Details.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRyeUN1cnJlbmN5XERldGFpbHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/heido/source/repos/heidom123/BlazorApp/Code/Shared/Pages/CountryCurrencyPages/Edit.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRyeUN1cnJlbmN5UGFnZXNcRWRpdC5yYXpvcg==
+[C:/Users/heido/source/repos/heidom123/BlazorApp/Code/Shared/Pages/CountryCurrency/Edit.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRyeUN1cnJlbmN5XEVkaXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/heido/source/repos/heidom123/BlazorApp/Code/Shared/Pages/CountryPages/Create.razor]
@@ -209,9 +209,9 @@ build_metadata.AdditionalFiles.CssScope = b-8otnl29m1r
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xOYXZNZW51LnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-wztjyvzlnp
 
-[C:/Users/heido/source/repos/heidom123/BlazorApp/Code/Shared/Pages/CountryCurrencyPages/Index.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRyeUN1cnJlbmN5UGFnZXNcSW5kZXgucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = b-gs4bif86ff
+[C:/Users/heido/source/repos/heidom123/BlazorApp/Code/Shared/Pages/CountryCurrency/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRyeUN1cnJlbmN5XEluZGV4LnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-7zvf46yqlj
 
 [C:/Users/heido/source/repos/heidom123/BlazorApp/Code/Shared/Pages/CountryPages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRyeVBhZ2VzXEluZGV4LnJhem9y

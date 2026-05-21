@@ -1,4 +1,4 @@
-<api type="debug" assembly-name="Abc.Soft.App" mvid="8bdcc9eb6fbd4e65b5e1e0195014738e">
+<api type="debug" assembly-name="Abc.Soft.App" mvid="54723ec7dfab4c51845d9b22473d00d4">
   <java-to-managed>
     <entry java-name="crc64f3a9094635dda4ff/MainActivity" managed-name="Maui.MainActivity, Abc.Soft.App" managed-type-token-id="33554437" />
     <entry java-name="crc64f3a9094635dda4ff/MainActivity_WindowInsetsListener" managed-name="Maui.MainActivity+WindowInsetsListener, Abc.Soft.App" managed-type-token-id="33554451" />

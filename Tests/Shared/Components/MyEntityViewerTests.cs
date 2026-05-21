@@ -6,10 +6,8 @@ using Abc.Tests.Aids;
 using Bunit;
 
 [TestClass]
-public sealed class MyEntityViewerTests : BaseTests<MyEntityViewer>
-{
-    private sealed class SampleEntity
-    {
+public sealed class MyEntityViewerTests : BaseTests<MyEntityViewer> {
+    private sealed class SampleEntity {
         public string Name { get; set; }
         public int? Age { get; set; }
     }
@@ -18,11 +16,9 @@ public sealed class MyEntityViewerTests : BaseTests<MyEntityViewer>
     private TestContext c;
 
     [TestInitialize]
-    override public void Initialize()
-    {
+    override public void Initialize() {
         base.Initialize();
-        e = new SampleEntity
-        {
+        e = new SampleEntity {
             Name = GetRandom.String(5, 10),
             Age = GetRandom.Int32(1, 100)
         };
@@ -30,20 +26,17 @@ public sealed class MyEntityViewerTests : BaseTests<MyEntityViewer>
         c = new TestContext();
     }
     [TestCleanup]
-    public void Cleanup()
-    {
+    public void Cleanup() {
         c.Dispose();
         c = null;
     }
     [TestMethod]
-    public void EntityTest()
-    {
+    public void EntityTest() {
         areEqual(null, obj.Entity);
         areSame(e, o.Entity);
     }
     [TestMethod]
-    public void RenderMarkupTest()
-    {
+    public void RenderMarkupTest() {
         var r = c.RenderComponent<MyEntityViewer>(p => p.Add(x => x.Entity, e));
         var labels = r.FindAll("dt").Select(x => x.TextContent).ToList();
         var values = r.FindAll("dd").Select(x => x.TextContent).ToList();
@@ -55,15 +48,13 @@ public sealed class MyEntityViewerTests : BaseTests<MyEntityViewer>
         Assert.Contains(e.Age.ToString(), values);
     }
     [TestMethod]
-    public void RenderNullEntityTest()
-    {
+    public void RenderNullEntityTest() {
         var r = c.RenderComponent<MyEntityViewer>(p => p.Add(x => x.Entity, null));
         areEqual(0, r.FindAll("dt").Count);
         areEqual(0, r.FindAll("dd").Count);
     }
     [TestMethod]
-    public void RenderNullValuesTest()
-    {
+    public void RenderNullValuesTest() {
         e = new SampleEntity();
         var r = c.RenderComponent<MyEntityViewer>(p => p.Add(x => x.Entity, e));
         areEqual(2, r.FindAll("dt").Count);

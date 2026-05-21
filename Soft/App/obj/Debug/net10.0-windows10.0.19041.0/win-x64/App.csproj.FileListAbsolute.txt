@@ -578,10 +578,7 @@ C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\App\bin\Debug\net10.0-windo
 C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\App\bin\Debug\net10.0-windows10.0.19041.0\win-x64\wwwroot\_content\Microsoft.AspNetCore.Components.QuickGrid\Microsoft.AspNetCore.Components.QuickGrid.boiwgh0w5b.bundle.scp.css
 C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\App\bin\Debug\net10.0-windows10.0.19041.0\win-x64\wwwroot\_content\Microsoft.AspNetCore.Components.QuickGrid\QuickGrid.razor.js
 C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\App\bin\Debug\net10.0-windows10.0.19041.0\win-x64\wwwroot\_content\Abc.Shared\exampleJsInterop.js.gz
-C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\App\bin\Debug\net10.0-windows10.0.19041.0\win-x64\wwwroot\_content\Abc.Shared\Abc.Shared.8ew27lxkfr.bundle.scp.css.gz
 C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\App\bin\Debug\net10.0-windows10.0.19041.0\win-x64\wwwroot\_content\Abc.Shared\exampleJsInterop.js.br
-C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\App\bin\Debug\net10.0-windows10.0.19041.0\win-x64\wwwroot\_content\Abc.Shared\Abc.Shared.8ew27lxkfr.bundle.scp.css.br
-C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\App\bin\Debug\net10.0-windows10.0.19041.0\win-x64\wwwroot\_content\Abc.Shared\Abc.Shared.8ew27lxkfr.bundle.scp.css
 C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\App\bin\Debug\net10.0-windows10.0.19041.0\win-x64\wwwroot\_content\Abc.Shared\background.png
 C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\App\bin\Debug\net10.0-windows10.0.19041.0\win-x64\wwwroot\_content\Abc.Shared\exampleJsInterop.js
 C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\App\bin\Debug\net10.0-windows10.0.19041.0\win-x64\Abc.Shared.staticwebassets.runtime.json
@@ -718,3 +715,6 @@ C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\App\bin\Debug\net10.0-windo
 C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\App\bin\Debug\net10.0-windows10.0.19041.0\win-x64\Abc.Domain.pdb
 C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\App\bin\Debug\net10.0-windows10.0.19041.0\win-x64\Abc.Infra.pdb
 C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\App\bin\Debug\net10.0-windows10.0.19041.0\win-x64\Abc.Jobs.pdb
+C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\App\bin\Debug\net10.0-windows10.0.19041.0\win-x64\wwwroot\_content\Abc.Shared\Abc.Shared.qeb7u56qc5.bundle.scp.css.gz
+C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\App\bin\Debug\net10.0-windows10.0.19041.0\win-x64\wwwroot\_content\Abc.Shared\Abc.Shared.qeb7u56qc5.bundle.scp.css.br
+C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\App\bin\Debug\net10.0-windows10.0.19041.0\win-x64\wwwroot\_content\Abc.Shared\Abc.Shared.qeb7u56qc5.bundle.scp.css

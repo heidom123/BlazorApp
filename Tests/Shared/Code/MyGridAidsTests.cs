@@ -6,22 +6,17 @@ using System.Reflection;
 namespace Abc.Tests.Shared.Code;
 
 [TestClass]
-public class MyGridAidsTests : TestAids
-{
-    private class TestClass
-    {
+public class MyGridAidsTests : TestAids {
+    private class TestClass {
         public string StringProperty { get; set; }
         public int IntProperty { get; set; }
         public object ObjectProperty { get; set; }
         public IEnumerable<int> EnumerableProperty { get; set; }
     }
     private TestClass o;
-    [TestInitialize]
-    public void TestInitialize()
-    {
+    [TestInitialize] public void TestInitialize() {
         type = typeof(MyGridAids);
-        o = new TestClass
-        {
+        o = new TestClass {
             StringProperty = GetRandom.String(),
             IntProperty = GetRandom.Int32(),
             ObjectProperty = new object(),
@@ -32,23 +27,17 @@ public class MyGridAidsTests : TestAids
     [DataRow(nameof(TestClass.IntProperty), true)]
     [DataRow(nameof(TestClass.ObjectProperty), false)]
     [DataRow(nameof(TestClass.EnumerableProperty), false)]
-    [TestMethod]
-    public void ShowTest(string name, bool show)
-    {
+    [TestMethod] public void ShowTest(string name, bool show) {
         areEqual(show, MyGridAids.Show(getProp(name)));
     }
     private PropertyInfo getProp(string name) => typeof(TestClass).GetProperty(name);
-    [TestMethod]
-    public void ValueTest()
-    {
+    [TestMethod] public void ValueTest() {
         areEqual(o.StringProperty, MyGridAids.Value(getProp(nameof(TestClass.StringProperty)), o));
         areEqual(o.IntProperty.ToString(), MyGridAids.Value(getProp(nameof(TestClass.IntProperty)), o));
         areEqual(o.ObjectProperty.ToString(), MyGridAids.Value(getProp(nameof(TestClass.ObjectProperty)), o));
         areEqual(o.EnumerableProperty.ToString(), MyGridAids.Value(getProp(nameof(TestClass.EnumerableProperty)), o));
     }
-    [TestMethod]
-    public void ValueNullTest()
-    {
+    [TestMethod] public void ValueNullTest() {
         o = new TestClass();
         areEqual("", MyGridAids.Value(getProp(nameof(TestClass.StringProperty)), o));
         areEqual(o.IntProperty.ToString(), MyGridAids.Value(getProp(nameof(TestClass.IntProperty)), o));

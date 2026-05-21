@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "CqAP1xyEu6Q=",
+  "dgSpecHash": "1M6eEJtsW44=",
   "success": true,
   "projectFilePath": "C:\\Users\\heido\\source\\repos\\heidom123\\BlazorApp\\Soft\\Movie\\Movie.csproj",
   "expectedPackageFiles": [
@@ -60,7 +60,7 @@
     "C:\\Users\\heido\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\10.0.8\\microsoft.aspnetcore.components.quickgrid.10.0.8.nupkg.sha512",
     "C:\\Users\\heido\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid.entityframeworkadapter\\10.0.8\\microsoft.aspnetcore.components.quickgrid.entityframeworkadapter.10.0.8.nupkg.sha512",
     "C:\\Users\\heido\\.nuget\\packages\\microsoft.aspnetcore.diagnostics.entityframeworkcore\\10.0.8\\microsoft.aspnetcore.diagnostics.entityframeworkcore.10.0.8.nupkg.sha512",
-    "C:\\Users\\heido\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\10.0.7\\microsoft.aspnetcore.identity.entityframeworkcore.10.0.7.nupkg.sha512",
+    "C:\\Users\\heido\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\10.0.8\\microsoft.aspnetcore.identity.entityframeworkcore.10.0.8.nupkg.sha512",
     "C:\\Users\\heido\\.nuget\\packages\\microsoft.aspnetcore.razor.language\\6.0.24\\microsoft.aspnetcore.razor.language.6.0.24.nupkg.sha512",
     "C:\\Users\\heido\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\8.0.0\\microsoft.bcl.asyncinterfaces.8.0.0.nupkg.sha512",
     "C:\\Users\\heido\\.nuget\\packages\\microsoft.bcl.cryptography\\9.0.4\\microsoft.bcl.cryptography.9.0.4.nupkg.sha512",
@@ -111,6 +111,7 @@
     "C:\\Users\\heido\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.utils\\10.0.2\\microsoft.visualstudio.web.codegeneration.utils.10.0.2.nupkg.sha512",
     "C:\\Users\\heido\\.nuget\\packages\\microsoft.visualstudio.web.codegenerators.mvc\\10.0.2\\microsoft.visualstudio.web.codegenerators.mvc.10.0.2.nupkg.sha512",
     "C:\\Users\\heido\\.nuget\\packages\\mono.texttemplating\\3.0.0\\mono.texttemplating.3.0.0.nupkg.sha512",
+    "C:\\Users\\heido\\.nuget\\packages\\mudblazor\\9.4.0\\mudblazor.9.4.0.nupkg.sha512",
     "C:\\Users\\heido\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\heido\\.nuget\\packages\\nuget.common\\7.3.1\\nuget.common.7.3.1.nupkg.sha512",
     "C:\\Users\\heido\\.nuget\\packages\\nuget.configuration\\7.3.1\\nuget.configuration.7.3.1.nupkg.sha512",

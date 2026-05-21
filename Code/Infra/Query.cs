@@ -1,8 +1,7 @@
 ﻿
 namespace Abc.Infra;
 
-public sealed class Query(Dictionary<string, string> d = null)
-{
+public sealed class Query(Dictionary<string, string> d = null) {
     private const string empty = "";
     public Query() : this(null) { }
     public static int[] PageSizes => [7, 15, 25, 50, 100];

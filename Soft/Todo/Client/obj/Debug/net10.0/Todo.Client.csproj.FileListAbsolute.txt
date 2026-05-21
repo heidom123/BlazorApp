@@ -2395,8 +2395,6 @@ C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\Todo\Client\bin\Debug\net10
 C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\Todo\Client\bin\Debug\net10.0\wwwroot\_framework\icudt_CJK.tjcz0u77k5.dat
 C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\Todo\Client\bin\Debug\net10.0\wwwroot\_framework\icudt_EFIGS.tptq2av103.dat
 C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\Todo\Client\bin\Debug\net10.0\wwwroot\_framework\icudt_no_CJK.lfu7j35m59.dat
-C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\Todo\Client\bin\Debug\net10.0\wwwroot\_framework\Abc.Soft.Web.Client.6xawepddfq.wasm
-C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\Todo\Client\bin\Debug\net10.0\wwwroot\_framework\Abc.Soft.Web.Client.dxohns4j1d.pdb
 C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\Todo\Client\bin\Debug\net10.0\wwwroot\_framework\dotnet.js
 C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\Todo\Client\bin\Debug\net10.0\wwwroot\_framework\blazor.webassembly.js.gz
 C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\Todo\Client\bin\Debug\net10.0\wwwroot\_framework\Microsoft.AspNetCore.Authorization.3ur142rhlk.wasm.gz
@@ -2608,8 +2606,6 @@ C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\Todo\Client\bin\Debug\net10
 C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\Todo\Client\bin\Debug\net10.0\wwwroot\_framework\icudt_CJK.tjcz0u77k5.dat.gz
 C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\Todo\Client\bin\Debug\net10.0\wwwroot\_framework\icudt_EFIGS.tptq2av103.dat.gz
 C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\Todo\Client\bin\Debug\net10.0\wwwroot\_framework\icudt_no_CJK.lfu7j35m59.dat.gz
-C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\Todo\Client\bin\Debug\net10.0\wwwroot\_framework\Abc.Soft.Web.Client.6xawepddfq.wasm.gz
-C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\Todo\Client\bin\Debug\net10.0\wwwroot\_framework\Abc.Soft.Web.Client.dxohns4j1d.pdb.gz
 C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\Todo\Client\bin\Debug\net10.0\wwwroot\_framework\dotnet.js.gz
 C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\Todo\Client\bin\Debug\net10.0\Abc.Soft.Web.Client.staticwebassets.runtime.json
 C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\Todo\Client\bin\Debug\net10.0\Abc.Soft.Web.Client.staticwebassets.endpoints.json
@@ -3263,9 +3259,6 @@ C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\Todo\Client\obj\Debug\net10
 C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\Todo\Client\obj\Debug\net10.0\compressed\64m8o0j9p1-{0}-tjcz0u77k5-tjcz0u77k5.gz
 C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\Todo\Client\obj\Debug\net10.0\compressed\3fa8ltofhr-{0}-tptq2av103-tptq2av103.gz
 C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\Todo\Client\obj\Debug\net10.0\compressed\f4mj5r6gsu-{0}-lfu7j35m59-lfu7j35m59.gz
-C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\Todo\Client\obj\Debug\net10.0\compressed\zobyftkwxq-{0}-6xawepddfq-6xawepddfq.gz
-C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\Todo\Client\obj\Debug\net10.0\compressed\9x1rw4usig-{0}-dxohns4j1d-dxohns4j1d.gz
-C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\Todo\Client\obj\Debug\net10.0\compressed\ci2rkmt6e1-{0}-y0fij81v6i-y0fij81v6i.gz
 C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\Todo\Client\obj\Debug\net10.0\staticwebassets.build.json
 C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\Todo\Client\obj\Debug\net10.0\staticwebassets.build.json.cache
 C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\Todo\Client\obj\Debug\net10.0\staticwebassets.development.json
@@ -3277,3 +3270,10 @@ C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\Todo\Client\obj\Debug\net10
 C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\Todo\Client\obj\Debug\net10.0\refint\Abc.Soft.Web.Client.dll
 C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\Todo\Client\obj\Debug\net10.0\Abc.Soft.Web.Client.pdb
 C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\Todo\Client\obj\Debug\net10.0\ref\Abc.Soft.Web.Client.dll
+C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\Todo\Client\bin\Debug\net10.0\wwwroot\_framework\Abc.Soft.Web.Client.3lzez71y1e.wasm
+C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\Todo\Client\bin\Debug\net10.0\wwwroot\_framework\Abc.Soft.Web.Client.0fwuncdvi6.pdb
+C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\Todo\Client\bin\Debug\net10.0\wwwroot\_framework\Abc.Soft.Web.Client.3lzez71y1e.wasm.gz
+C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\Todo\Client\bin\Debug\net10.0\wwwroot\_framework\Abc.Soft.Web.Client.0fwuncdvi6.pdb.gz
+C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\Todo\Client\obj\Debug\net10.0\compressed\zobyftkwxq-{0}-3lzez71y1e-3lzez71y1e.gz
+C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\Todo\Client\obj\Debug\net10.0\compressed\9x1rw4usig-{0}-0fwuncdvi6-0fwuncdvi6.gz
+C:\Users\heido\source\repos\heidom123\BlazorApp\Soft\Todo\Client\obj\Debug\net10.0\compressed\ci2rkmt6e1-{0}-trtixd5ef3-trtixd5ef3.gz

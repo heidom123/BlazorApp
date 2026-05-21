@@ -407,7 +407,6 @@ C:\Users\heido\source\repos\heidom123\BlazorApp\Tests\Infrra\bin\Debug\net10.0\r
 C:\Users\heido\source\repos\heidom123\BlazorApp\Tests\Infrra\bin\Debug\net10.0\runtimes\win-arm64\native\e_sqlite3.dll
 C:\Users\heido\source\repos\heidom123\BlazorApp\Tests\Infrra\bin\Debug\net10.0\runtimes\win-x64\native\e_sqlite3.dll
 C:\Users\heido\source\repos\heidom123\BlazorApp\Tests\Infrra\bin\Debug\net10.0\runtimes\win-x86\native\e_sqlite3.dll
-C:\Users\heido\source\repos\heidom123\BlazorApp\Tests\Infrra\bin\Debug\net10.0\runtimes\win\lib\net10.0\System.Security.Cryptography.Pkcs.dll
 C:\Users\heido\source\repos\heidom123\BlazorApp\Tests\Infrra\bin\Debug\net10.0\Abc.Aids.dll
 C:\Users\heido\source\repos\heidom123\BlazorApp\Tests\Infrra\bin\Debug\net10.0\Abc.Data.dll
 C:\Users\heido\source\repos\heidom123\BlazorApp\Tests\Infrra\bin\Debug\net10.0\Abc.Domain.dll
@@ -434,3 +433,4 @@ C:\Users\heido\source\repos\heidom123\BlazorApp\Tests\Infrra\obj\Debug\net10.0\r
 C:\Users\heido\source\repos\heidom123\BlazorApp\Tests\Infrra\obj\Debug\net10.0\Abc.Tests.Infra.pdb
 C:\Users\heido\source\repos\heidom123\BlazorApp\Tests\Infrra\obj\Debug\net10.0\Infra.genruntimeconfig.cache
 C:\Users\heido\source\repos\heidom123\BlazorApp\Tests\Infrra\obj\Debug\net10.0\ref\Abc.Tests.Infra.dll
+C:\Users\heido\source\repos\heidom123\BlazorApp\Tests\Infrra\bin\Debug\net10.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll

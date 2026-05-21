@@ -1,21 +1,28 @@
-﻿<div class="top-row ps-3 navbar navbar-dark">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="">Movies</a>
-    </div>
-</div>
+﻿@implements IDisposable
+@using MudBlazor
 
-<input type="checkbox" title="Navigation menu" class="navbar-toggler" />
+@inject NavigationManager NavigationManager
 
-<div class="nav-scrollable" onclick="document.querySelector('.navbar-toggler').click()">
-    <nav class="nav flex-column">
-        <MyNavLink Href="" Match="NavLinkMatch.All" IconClass="bi-home-icon" Text="Home" />
-        <MyNavLink Href="counter" IconClass="bi-plus-icon" Text="Counter" />
-        <MyNavLink Href="weather" IconClass="bi-list-icon" Text="Weather" />
-        <MyNavLink Href="movies" IconClass="bi-movies-icon" Text="Movies" />
-        <MyNavLink Href="countries" IconClass="bi-countries-icon" Text="Countries" />
-        <MyNavLink Href="currencies" IconClass="bi-currencies-icon" Text="Currencies" />
-        <MyNavLink Href="moneys" IconClass="bi-moneys-icon" Text="Moneys" />
-        <MyNavLink Href="countrycurrencies" IconClass="bi-countrycurrencies-icon" Text="Country Currencies" />
-    </nav>
-</div>
+<Abc.Shared.Components.NavMenu>
+    <AdditionalLinks>
+    </AdditionalLinks>
+</Abc.Shared.Components.NavMenu>
+
+@code {
+    private string currentUrl;
+
+    protected override async Task OnInitializedAsync() {
+        currentUrl = NavigationManager.ToBaseRelativePath(NavigationManager.Uri);
+        NavigationManager.LocationChanged += OnLocationChanged;
+    }
+
+    private void OnLocationChanged(object sender, LocationChangedEventArgs e) {
+        currentUrl = NavigationManager.ToBaseRelativePath(e.Location);
+        StateHasChanged();
+    }
+
+    public void Dispose() {
+        NavigationManager.LocationChanged -= OnLocationChanged;
+    }
+}
 

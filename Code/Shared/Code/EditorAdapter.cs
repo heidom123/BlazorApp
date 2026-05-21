@@ -7,6 +7,7 @@ using System.Text.RegularExpressions;
 using Abc.Shared.Components;
 
 namespace Abc.Shared.Code;
+
 public interface IEditorAdapter {
     string DisplayName { get; }
     PropertyInfo PropInfo { get; }
@@ -30,8 +31,7 @@ public sealed partial class EditorAdapter(ComponentBase c, object item, string p
                         : null;
     public Type Validator => generic(typeof(ValidationMessage<>), propType);
     public IDictionary<string, object> EditorParams
-        => new Dictionary<string, object>
-        {
+        => new Dictionary<string, object> {
             ["id"] = propName,
             ["name"] = inputName,
             ["class"] = "form-control",
@@ -40,8 +40,7 @@ public sealed partial class EditorAdapter(ComponentBase c, object item, string p
             ["ValueExpression"] = valExpression()
         }.withSelectParams(hasSelect);
     public IDictionary<string, object> ValidationParams
-        => new Dictionary<string, object>
-        {
+        => new Dictionary<string, object> {
             ["For"] = valExpression(),
             ["class"] = "text-danger"
         };
@@ -52,8 +51,7 @@ public sealed partial class EditorAdapter(ComponentBase c, object item, string p
             ad.SetValue(value);
             return Task.CompletedTask;
         });
-    internal Expression<Func<TValue>> expression<TValue>()
-    {
+    internal Expression<Func<TValue>> expression<TValue>() {
         var i = Expression.Constant(item);
         var p = Expression.Property(Expression.Convert(i, ad.ItemType), ad.PropInfo);
         return Expression.Lambda<Func<TValue>>(p);
@@ -76,10 +74,8 @@ public sealed partial class EditorAdapter(ComponentBase c, object item, string p
     public bool HasProperty => PropInfo is not null;
 }
 
-file static class EditorParamsExtensions
-{
-    public static IDictionary<string, object> withSelectParams(this IDictionary<string, object> d, SelectAttribute a)
-    {
+file static class EditorParamsExtensions {
+    public static IDictionary<string, object> withSelectParams(this IDictionary<string, object> d, SelectAttribute a) {
         if (a is null) return d;
         d[nameof(SelectAttribute.EntityType)] = a.EntityType;
         d[nameof(SelectAttribute.DisplayProperty)] = a.DisplayProperty;

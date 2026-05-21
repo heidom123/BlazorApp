@@ -6,15 +6,13 @@ using Abc.Tests.Aids;
 using Bunit;
 
 [TestClass]
-public sealed class MyPropertyViewerTests : BaseTests<MyPropertyViewer>
-{
+public sealed class MyPropertyViewerTests : BaseTests<MyPropertyViewer> {
     private MyPropertyViewer o;
     private string l;
     private string v;
     private TestContext c;
     [TestInitialize]
-    override public void Initialize()
-    {
+    override public void Initialize() {
         base.Initialize();
         l = GetRandom.String(5, 10);
         v = GetRandom.String(5, 10);
@@ -22,26 +20,22 @@ public sealed class MyPropertyViewerTests : BaseTests<MyPropertyViewer>
         c = new TestContext();
     }
     [TestCleanup]
-    public void Cleanup()
-    {
+    public void Cleanup() {
         c.Dispose();
         c = null;
     }
     [TestMethod]
-    public void LabelTest()
-    {
+    public void LabelTest() {
         areEqual(string.Empty, obj.Label);
         areEqual(l, o.Label);
     }
     [TestMethod]
-    public void ValueTest()
-    {
+    public void ValueTest() {
         areEqual(null, obj.Value);
         areEqual(v, o.Value);
     }
     [TestMethod]
-    public void RenderMarkupTest()
-    {
+    public void RenderMarkupTest() {
         var r = c.RenderComponent<MyPropertyViewer>(p => p
             .Add(x => x.Label, l)
             .Add(x => x.Value, v));
