@@ -17,7 +17,7 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <FileLength>5641</FileLength>
-      <LastWriteTime>Thu, 21 May 2026 18:00:22 GMT</LastWriteTime>
+      <LastWriteTime>Thu, 21 May 2026 19:54:46 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Abc.Soft.App.styles.css'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\app.css'))">
@@ -52,12 +52,12 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>axe3b5ojzw</Fingerprint>
-      <Integrity>sjLTqZ4vpgCD/4eTzhhUwmRaem+ZIU5jU0x9fps3XWs=</Integrity>
+      <Fingerprint>xc92mmqogw</Fingerprint>
+      <Integrity>H9Yi2C7cftzBf22IgSvKsRwaCml12Emarb9Op3a3ciU=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <FileLength>952</FileLength>
-      <LastWriteTime>Thu, 21 May 2026 16:50:15 GMT</LastWriteTime>
+      <FileLength>1017</FileLength>
+      <LastWriteTime>Thu, 21 May 2026 20:03:26 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\index.html'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\css\bootstrap.min.css'))">
